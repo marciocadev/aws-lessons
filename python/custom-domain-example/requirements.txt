@@ -1,0 +1,10 @@
+-e .
+aws_cdk.aws_ec2==1.127.0
+aws_cdk.aws_lambda==1.127.0
+aws_cdk.aws_s3==1.127.0
+aws_cdk.aws_s3_deployment==1.127.0
+aws_cdk.aws_cloudfront==1.127.0
+aws_cdk.aws_route53==1.127.0
+aws_cdk.aws_route53_targets==1.127.0
+aws_cdk.aws_certificatemanager==1.127.0
+aws_cdk.aws_apigateway==1.127.0
