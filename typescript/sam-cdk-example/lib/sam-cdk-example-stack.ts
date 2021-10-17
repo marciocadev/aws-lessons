@@ -1,10 +1,10 @@
-import * as cdk from '@aws-cdk/core';
+import { Stack, Construct, StackProps, Duration, RemovalPolicy } from '@aws-cdk/core';
 import { Code, Function, LayerVersion, Runtime, Tracing } from '@aws-cdk/aws-lambda';
 import { AttributeType, Table } from '@aws-cdk/aws-dynamodb';
-import { Duration, RemovalPolicy } from '@aws-cdk/core';
+import { RetentionDays } from '@aws-cdk/aws-logs';
 
-export class SamCdkExampleStack extends cdk.Stack {
-  constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
+export class SamCdkExampleStack extends Stack {
+  constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
     const layer = new LayerVersion(this, 'SamCdkExampleLayer', {
@@ -17,6 +17,7 @@ export class SamCdkExampleStack extends cdk.Stack {
       handler: 'lambda.handler',
       runtime: Runtime.NODEJS_14_X,
       tracing: Tracing.ACTIVE,
+      logRetention: RetentionDays.ONE_DAY, 
       timeout: Duration.minutes(3),
       layers: [layer]
     });

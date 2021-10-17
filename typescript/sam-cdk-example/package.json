@@ -27,6 +27,7 @@
     "@aws-cdk/aws-apigateway": "^1.128.0",
     "@aws-cdk/aws-dynamodb": "^1.128.0",
     "@aws-cdk/aws-lambda": "^1.128.0",
+    "@aws-cdk/aws-logs": "^1.128.0",
     "@aws-cdk/core": "1.128.0",
     "aws-xray-sdk": "^3.3.3",
     "axios": "^0.23.0",

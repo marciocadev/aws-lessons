@@ -19,7 +19,7 @@ exports.handler = async(event: any, context: any) => {
     }
 
     try {
-        const dbres = await db.put(params).promise();
+        await db.put(params).promise();
         return {
             statusCode: 200,
             body: "ok"

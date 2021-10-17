@@ -137,7 +137,7 @@
             "Properties": {
                 "Code": {
                     "S3Bucket": {
-                        "Ref": "AssetParameters0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210S3Bucket1DBB44A8"
+                        "Ref": "AssetParametersfd6cd947e5078db40b62fb78469ceb244aff98cf7d5908d23ad624806742cdfbS3Bucket382F72E0"
                     },
                     "S3Key": {
                         "Fn::Join": [
@@ -150,7 +150,7 @@
                                             "Fn::Split": [
                                                 "||",
                                                 {
-                                                    "Ref": "AssetParameters0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210S3VersionKeyFA098585"
+                                                    "Ref": "AssetParametersfd6cd947e5078db40b62fb78469ceb244aff98cf7d5908d23ad624806742cdfbS3VersionKey4E45A9DB"
                                                 }
                                             ]
                                         }
@@ -163,7 +163,7 @@
                                             "Fn::Split": [
                                                 "||",
                                                 {
-                                                    "Ref": "AssetParameters0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210S3VersionKeyFA098585"
+                                                    "Ref": "AssetParametersfd6cd947e5078db40b62fb78469ceb244aff98cf7d5908d23ad624806742cdfbS3VersionKey4E45A9DB"
                                                 }
                                             ]
                                         }
@@ -201,6 +201,151 @@
                 "aws:asset:property": "Code"
             }
         },
+        "SamCdkExampleLambdaLogRetentionFF5038C1": {
+            "Type": "Custom::LogRetention",
+            "Properties": {
+                "ServiceToken": {
+                    "Fn::GetAtt": [
+                        "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A",
+                        "Arn"
+                    ]
+                },
+                "LogGroupName": {
+                    "Fn::Join": [
+                        "",
+                        [
+                            "/aws/lambda/",
+                            {
+                                "Ref": "SamCdkExampleLambdaD96A7BC6"
+                            }
+                        ]
+                    ]
+                },
+                "RetentionInDays": 1
+            },
+            "Metadata": {
+                "aws:cdk:path": "SamCdkExampleStack/SamCdkExampleLambda/LogRetention/Resource"
+            }
+        },
+        "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB": {
+            "Type": "AWS::IAM::Role",
+            "Properties": {
+                "AssumeRolePolicyDocument": {
+                    "Statement": [
+                        {
+                            "Action": "sts:AssumeRole",
+                            "Effect": "Allow",
+                            "Principal": {
+                                "Service": "lambda.amazonaws.com"
+                            }
+                        }
+                    ],
+                    "Version": "2012-10-17"
+                },
+                "ManagedPolicyArns": [
+                    {
+                        "Fn::Join": [
+                            "",
+                            [
+                                "arn:",
+                                {
+                                    "Ref": "AWS::Partition"
+                                },
+                                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                            ]
+                        ]
+                    }
+                ]
+            },
+            "Metadata": {
+                "aws:cdk:path": "SamCdkExampleStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/Resource"
+            }
+        },
+        "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB": {
+            "Type": "AWS::IAM::Policy",
+            "Properties": {
+                "PolicyDocument": {
+                    "Statement": [
+                        {
+                            "Action": [
+                                "logs:PutRetentionPolicy",
+                                "logs:DeleteRetentionPolicy"
+                            ],
+                            "Effect": "Allow",
+                            "Resource": "*"
+                        }
+                    ],
+                    "Version": "2012-10-17"
+                },
+                "PolicyName": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB",
+                "Roles": [
+                    {
+                        "Ref": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB"
+                    }
+                ]
+            },
+            "Metadata": {
+                "aws:cdk:path": "SamCdkExampleStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/DefaultPolicy/Resource"
+            }
+        },
+        "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+                "Handler": "index.handler",
+                "Runtime": "nodejs14.x",
+                "Code": {
+                    "S3Bucket": {
+                        "Ref": "AssetParametersb120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827S3Bucket2070BA0A"
+                    },
+                    "S3Key": {
+                        "Fn::Join": [
+                            "",
+                            [
+                                {
+                                    "Fn::Select": [
+                                        0,
+                                        {
+                                            "Fn::Split": [
+                                                "||",
+                                                {
+                                                    "Ref": "AssetParametersb120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827S3VersionKeyB95D17C3"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Fn::Select": [
+                                        1,
+                                        {
+                                            "Fn::Split": [
+                                                "||",
+                                                {
+                                                    "Ref": "AssetParametersb120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827S3VersionKeyB95D17C3"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        ]
+                    }
+                },
+                "Role": {
+                    "Fn::GetAtt": [
+                        "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB",
+                        "Arn"
+                    ]
+                }
+            },
+            "DependsOn": [
+                "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB",
+                "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB"
+            ],
+            "Metadata": {
+                "aws:cdk:path": "SamCdkExampleStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Resource"
+            }
+        },
         "SamCdkExampleTable3D4ECD59": {
             "Type": "AWS::DynamoDB::Table",
             "Properties": {
@@ -231,7 +376,7 @@
         "CDKMetadata": {
             "Type": "AWS::CDK::Metadata",
             "Properties": {
-                "Analytics": "v2:deflate64:H4sIAAAAAAAA/1WOwU7DMBBEv6X3zRYDhx6hlXriUAXEfWMvlZvYlrw2KLL878QJSHCaNzuj1ShU9we82z3Rl3TajPuiQ2Qsr4n0CM8inBa8Wn+FU/CSYtYJTh/+QpEcJ47Qs4QcNbfrX17qxiYbfIX2u0zkBkNYXmjm+M5Rlqj1/vlz9jr9BL9cQR46aksE10GLx2PWI6cjCYMlh6UP07ag6SVMVs/rzJUqmNmTC2bA8kbD1lyh1go+GMab7D/VI6oDqt1NrO1i9sk6xn7Tb2eTXHAoAQAA"
+                "Analytics": "v2:deflate64:H4sIAAAAAAAA/1WOzU7DMBCEn6V3Z0uAQ4/QSpx6qALivrGXyE3slbw2KLL87jguIHGab/Z3eujvD3C3e8Iv6bSZ91lzIMivEfWsnkUoVpysn9SJvcSQdFSnD3/BgI4ihc0MJJyCJvUHtVjHjY2WfVHb7bygGw1CPuNK4Z2C1NY298+/JK/jT+OXi5KHDrckAi1Q9XBMeqZ4RCFl0UEeeGlfm154sXptMRsVtfAkcOZpqJF9e2BWj47NCPkNx9tug1KK8mwIrrL/7B+hP0C/u4q1XUh10xEMN/0GBknYWjoBAAA="
             },
             "Metadata": {
                 "aws:cdk:path": "SamCdkExampleStack/CDKMetadata/Default"
@@ -252,17 +397,29 @@
             "Type": "String",
             "Description": "Artifact hash for asset \"884812e6469eb31d6e062c07b7836d9c755aad15df1e84f1961f0d73e015a5ba\""
         },
-        "AssetParameters0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210S3Bucket1DBB44A8": {
+        "AssetParametersfd6cd947e5078db40b62fb78469ceb244aff98cf7d5908d23ad624806742cdfbS3Bucket382F72E0": {
             "Type": "String",
-            "Description": "S3 bucket for asset \"0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210\""
+            "Description": "S3 bucket for asset \"fd6cd947e5078db40b62fb78469ceb244aff98cf7d5908d23ad624806742cdfb\""
         },
-        "AssetParameters0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210S3VersionKeyFA098585": {
+        "AssetParametersfd6cd947e5078db40b62fb78469ceb244aff98cf7d5908d23ad624806742cdfbS3VersionKey4E45A9DB": {
             "Type": "String",
-            "Description": "S3 key for asset version \"0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210\""
+            "Description": "S3 key for asset version \"fd6cd947e5078db40b62fb78469ceb244aff98cf7d5908d23ad624806742cdfb\""
         },
-        "AssetParameters0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210ArtifactHashE65712F7": {
+        "AssetParametersfd6cd947e5078db40b62fb78469ceb244aff98cf7d5908d23ad624806742cdfbArtifactHashED9A7644": {
             "Type": "String",
-            "Description": "Artifact hash for asset \"0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210\""
+            "Description": "Artifact hash for asset \"fd6cd947e5078db40b62fb78469ceb244aff98cf7d5908d23ad624806742cdfb\""
+        },
+        "AssetParametersb120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827S3Bucket2070BA0A": {
+            "Type": "String",
+            "Description": "S3 bucket for asset \"b120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827\""
+        },
+        "AssetParametersb120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827S3VersionKeyB95D17C3": {
+            "Type": "String",
+            "Description": "S3 key for asset version \"b120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827\""
+        },
+        "AssetParametersb120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827ArtifactHash1355580A": {
+            "Type": "String",
+            "Description": "Artifact hash for asset \"b120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827\""
         }
     },
     "Conditions": {

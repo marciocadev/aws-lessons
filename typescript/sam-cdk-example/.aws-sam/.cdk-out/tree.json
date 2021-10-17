@@ -154,13 +154,13 @@
                   "version": "1.128.0"
                 }
               },
-              "0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210": {
-                "id": "0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210",
-                "path": "SamCdkExampleStack/AssetParameters/0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210",
+              "fd6cd947e5078db40b62fb78469ceb244aff98cf7d5908d23ad624806742cdfb": {
+                "id": "fd6cd947e5078db40b62fb78469ceb244aff98cf7d5908d23ad624806742cdfb",
+                "path": "SamCdkExampleStack/AssetParameters/fd6cd947e5078db40b62fb78469ceb244aff98cf7d5908d23ad624806742cdfb",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "SamCdkExampleStack/AssetParameters/0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210/S3Bucket",
+                    "path": "SamCdkExampleStack/AssetParameters/fd6cd947e5078db40b62fb78469ceb244aff98cf7d5908d23ad624806742cdfb/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.128.0"
@@ -168,7 +168,7 @@
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "SamCdkExampleStack/AssetParameters/0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210/S3VersionKey",
+                    "path": "SamCdkExampleStack/AssetParameters/fd6cd947e5078db40b62fb78469ceb244aff98cf7d5908d23ad624806742cdfb/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.128.0"
@@ -176,7 +176,41 @@
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "SamCdkExampleStack/AssetParameters/0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210/ArtifactHash",
+                    "path": "SamCdkExampleStack/AssetParameters/fd6cd947e5078db40b62fb78469ceb244aff98cf7d5908d23ad624806742cdfb/ArtifactHash",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.128.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Construct",
+                  "version": "1.128.0"
+                }
+              },
+              "b120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827": {
+                "id": "b120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827",
+                "path": "SamCdkExampleStack/AssetParameters/b120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "SamCdkExampleStack/AssetParameters/b120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827/S3Bucket",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.128.0"
+                    }
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "SamCdkExampleStack/AssetParameters/b120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827/S3VersionKey",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.128.0"
+                    }
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "SamCdkExampleStack/AssetParameters/b120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.128.0"
@@ -353,7 +387,7 @@
                   "aws:cdk:cloudformation:props": {
                     "code": {
                       "s3Bucket": {
-                        "Ref": "AssetParameters0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210S3Bucket1DBB44A8"
+                        "Ref": "AssetParametersfd6cd947e5078db40b62fb78469ceb244aff98cf7d5908d23ad624806742cdfbS3Bucket382F72E0"
                       },
                       "s3Key": {
                         "Fn::Join": [
@@ -366,7 +400,7 @@
                                   "Fn::Split": [
                                     "||",
                                     {
-                                      "Ref": "AssetParameters0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210S3VersionKeyFA098585"
+                                      "Ref": "AssetParametersfd6cd947e5078db40b62fb78469ceb244aff98cf7d5908d23ad624806742cdfbS3VersionKey4E45A9DB"
                                     }
                                   ]
                                 }
@@ -379,7 +413,7 @@
                                   "Fn::Split": [
                                     "||",
                                     {
-                                      "Ref": "AssetParameters0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210S3VersionKeyFA098585"
+                                      "Ref": "AssetParametersfd6cd947e5078db40b62fb78469ceb244aff98cf7d5908d23ad624806742cdfbS3VersionKey4E45A9DB"
                                     }
                                   ]
                                 }
@@ -412,10 +446,181 @@
                   "fqn": "@aws-cdk/aws-lambda.CfnFunction",
                   "version": "1.128.0"
                 }
+              },
+              "LogRetention": {
+                "id": "LogRetention",
+                "path": "SamCdkExampleStack/SamCdkExampleLambda/LogRetention",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "SamCdkExampleStack/SamCdkExampleLambda/LogRetention/Resource",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnResource",
+                      "version": "1.128.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-logs.LogRetention",
+                  "version": "1.128.0"
+                }
+              },
+              "LogGroup": {
+                "id": "LogGroup",
+                "path": "SamCdkExampleStack/SamCdkExampleLambda/LogGroup",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Resource",
+                  "version": "1.128.0"
+                }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-lambda.Function",
+              "version": "1.128.0"
+            }
+          },
+          "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a": {
+            "id": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a",
+            "path": "SamCdkExampleStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a",
+            "children": {
+              "Code": {
+                "id": "Code",
+                "path": "SamCdkExampleStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Code",
+                "children": {
+                  "Stage": {
+                    "id": "Stage",
+                    "path": "SamCdkExampleStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Code/Stage",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.AssetStaging",
+                      "version": "1.128.0"
+                    }
+                  },
+                  "AssetBucket": {
+                    "id": "AssetBucket",
+                    "path": "SamCdkExampleStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Code/AssetBucket",
+                    "children": {
+                      "Notifications": {
+                        "id": "Notifications",
+                        "path": "SamCdkExampleStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Code/AssetBucket/Notifications",
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/core.Construct",
+                          "version": "1.128.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-s3.BucketBase",
+                      "version": "1.128.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-s3-assets.Asset",
+                  "version": "1.128.0"
+                }
+              },
+              "ServiceRole": {
+                "id": "ServiceRole",
+                "path": "SamCdkExampleStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "SamCdkExampleStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                      "aws:cdk:cloudformation:props": {
+                        "assumeRolePolicyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "sts:AssumeRole",
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Service": "lambda.amazonaws.com"
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "managedPolicyArns": [
+                          {
+                            "Fn::Join": [
+                              "",
+                              [
+                                "arn:",
+                                {
+                                  "Ref": "AWS::Partition"
+                                },
+                                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                              ]
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.CfnRole",
+                      "version": "1.128.0"
+                    }
+                  },
+                  "DefaultPolicy": {
+                    "id": "DefaultPolicy",
+                    "path": "SamCdkExampleStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/DefaultPolicy",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "SamCdkExampleStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/DefaultPolicy/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                          "aws:cdk:cloudformation:props": {
+                            "policyDocument": {
+                              "Statement": [
+                                {
+                                  "Action": [
+                                    "logs:PutRetentionPolicy",
+                                    "logs:DeleteRetentionPolicy"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": "*"
+                                }
+                              ],
+                              "Version": "2012-10-17"
+                            },
+                            "policyName": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB",
+                            "roles": [
+                              {
+                                "Ref": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB"
+                              }
+                            ]
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-iam.CfnPolicy",
+                          "version": "1.128.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.Policy",
+                      "version": "1.128.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-iam.Role",
+                  "version": "1.128.0"
+                }
+              },
+              "Resource": {
+                "id": "Resource",
+                "path": "SamCdkExampleStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Resource",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnResource",
+                  "version": "1.128.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Construct",
               "version": "1.128.0"
             }
           },
