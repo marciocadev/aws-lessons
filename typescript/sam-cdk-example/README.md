@@ -32,4 +32,10 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 ## Rodando local
 * `npm run local-lambda` roda localmente o lambda
 * `npm run local -- SamCdkExampleStack/SamCdkExampleLambda` roda localmente passando a stack/lambda como argumento
+ 
+## Debugando localmente
 * `npm run debug -- SamCdkExampleStack/SamCdkExampleLambda` debugando localmente passando a stack/lambda como argumento
+
+Após a execuçaão do comando deve aparecer no terminal uma linha similar a está `Debugger listening on ws://0.0.0.0:9999/d19f8203-4cce-4daf-a902-5a7aa4adb24c` 
+
+Quando aparecer, coloque um breakpoint no lambda que se deseja debugar e execute o debug no vscode
