@@ -1,0 +1,504 @@
+{
+    "version": "14.0.0",
+    "artifacts": {
+        "Tree": {
+            "type": "cdk:tree",
+            "properties": {
+                "file": "tree.json"
+            }
+        },
+        "SamCdkExampleStack": {
+            "type": "aws:cloudformation:stack",
+            "environment": "aws://unknown-account/unknown-region",
+            "properties": {
+                "templateFile": "SamCdkExampleStack.template.json",
+                "validateOnSynth": false
+            },
+            "metadata": {
+                "/SamCdkExampleStack": [
+                    {
+                        "type": "aws:cdk:asset",
+                        "data": {
+                            "path": "/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/layers",
+                            "id": "884812e6469eb31d6e062c07b7836d9c755aad15df1e84f1961f0d73e015a5ba",
+                            "packaging": "zip",
+                            "sourceHash": "884812e6469eb31d6e062c07b7836d9c755aad15df1e84f1961f0d73e015a5ba",
+                            "s3BucketParameter": "AssetParameters884812e6469eb31d6e062c07b7836d9c755aad15df1e84f1961f0d73e015a5baS3BucketF0728B9B",
+                            "s3KeyParameter": "AssetParameters884812e6469eb31d6e062c07b7836d9c755aad15df1e84f1961f0d73e015a5baS3VersionKey5FFCFAF9",
+                            "artifactHashParameter": "AssetParameters884812e6469eb31d6e062c07b7836d9c755aad15df1e84f1961f0d73e015a5baArtifactHashDB0A92EA"
+                        },
+                        "trace": [
+                            "ConstructNode.addMetadata (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+                            "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:161:23)",
+                            "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+                            "SamCdkExampleStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+                            "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+                            "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+                            "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+                            "new LayerVersion (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:124:29)",
+                            "new SamCdkExampleStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/lib/sam-cdk-example-stack.ts:10:19)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/bin/sam-cdk-example.ts:7:1)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1056:23)",
+                            "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1059:12)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:198:14)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:288:3)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+                        ]
+                    },
+                    {
+                        "type": "aws:cdk:asset",
+                        "data": {
+                            "path": "/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/.aws-sam/build/SamCdkExampleStack/SamCdkExampleLambdaD96A7BC6",
+                            "id": "0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210",
+                            "packaging": "zip",
+                            "sourceHash": "0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210",
+                            "s3BucketParameter": "AssetParameters0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210S3Bucket1DBB44A8",
+                            "s3KeyParameter": "AssetParameters0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210S3VersionKeyFA098585",
+                            "artifactHashParameter": "AssetParameters0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210ArtifactHashE65712F7"
+                        },
+                        "trace": [
+                            "ConstructNode.addMetadata (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+                            "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:161:23)",
+                            "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+                            "SamCdkExampleStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+                            "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+                            "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+                            "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+                            "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+                            "new SamCdkExampleStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/lib/sam-cdk-example-stack.ts:15:17)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/bin/sam-cdk-example.ts:7:1)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1056:23)",
+                            "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1059:12)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:198:14)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:288:3)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+                        ]
+                    }
+                ],
+                "/SamCdkExampleStack/SamCdkExampleLayer/Resource": [
+                    {
+                        "type": "aws:cdk:logicalId",
+                        "data": "SamCdkExampleLayer7AA38B04",
+                        "trace": [
+                            "new LayerVersion (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:132:39)",
+                            "new SamCdkExampleStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/lib/sam-cdk-example-stack.ts:10:19)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/bin/sam-cdk-example.ts:7:1)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1056:23)",
+                            "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1059:12)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:198:14)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:288:3)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+                        ]
+                    }
+                ],
+                "/SamCdkExampleStack/AssetParameters/884812e6469eb31d6e062c07b7836d9c755aad15df1e84f1961f0d73e015a5ba/S3Bucket": [
+                    {
+                        "type": "aws:cdk:logicalId",
+                        "data": "AssetParameters884812e6469eb31d6e062c07b7836d9c755aad15df1e84f1961f0d73e015a5baS3BucketF0728B9B",
+                        "trace": [
+                            "new FileAssetParameters (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+                            "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+                            "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+                            "SamCdkExampleStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+                            "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+                            "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+                            "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+                            "new LayerVersion (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:124:29)",
+                            "new SamCdkExampleStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/lib/sam-cdk-example-stack.ts:10:19)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/bin/sam-cdk-example.ts:7:1)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1056:23)",
+                            "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1059:12)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:198:14)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:288:3)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+                        ]
+                    }
+                ],
+                "/SamCdkExampleStack/AssetParameters/884812e6469eb31d6e062c07b7836d9c755aad15df1e84f1961f0d73e015a5ba/S3VersionKey": [
+                    {
+                        "type": "aws:cdk:logicalId",
+                        "data": "AssetParameters884812e6469eb31d6e062c07b7836d9c755aad15df1e84f1961f0d73e015a5baS3VersionKey5FFCFAF9",
+                        "trace": [
+                            "new FileAssetParameters (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+                            "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+                            "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+                            "SamCdkExampleStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+                            "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+                            "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+                            "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+                            "new LayerVersion (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:124:29)",
+                            "new SamCdkExampleStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/lib/sam-cdk-example-stack.ts:10:19)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/bin/sam-cdk-example.ts:7:1)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1056:23)",
+                            "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1059:12)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:198:14)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:288:3)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+                        ]
+                    }
+                ],
+                "/SamCdkExampleStack/AssetParameters/884812e6469eb31d6e062c07b7836d9c755aad15df1e84f1961f0d73e015a5ba/ArtifactHash": [
+                    {
+                        "type": "aws:cdk:logicalId",
+                        "data": "AssetParameters884812e6469eb31d6e062c07b7836d9c755aad15df1e84f1961f0d73e015a5baArtifactHashDB0A92EA",
+                        "trace": [
+                            "new FileAssetParameters (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+                            "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+                            "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+                            "SamCdkExampleStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+                            "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+                            "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+                            "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+                            "new LayerVersion (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:124:29)",
+                            "new SamCdkExampleStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/lib/sam-cdk-example-stack.ts:10:19)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/bin/sam-cdk-example.ts:7:1)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1056:23)",
+                            "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1059:12)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:198:14)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:288:3)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+                        ]
+                    }
+                ],
+                "/SamCdkExampleStack/AssetParameters/0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210/S3Bucket": [
+                    {
+                        "type": "aws:cdk:logicalId",
+                        "data": "AssetParameters0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210S3Bucket1DBB44A8",
+                        "trace": [
+                            "new FileAssetParameters (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+                            "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+                            "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+                            "SamCdkExampleStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+                            "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+                            "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+                            "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+                            "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+                            "new SamCdkExampleStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/lib/sam-cdk-example-stack.ts:15:17)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/bin/sam-cdk-example.ts:7:1)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1056:23)",
+                            "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1059:12)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:198:14)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:288:3)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+                        ]
+                    }
+                ],
+                "/SamCdkExampleStack/AssetParameters/0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210/S3VersionKey": [
+                    {
+                        "type": "aws:cdk:logicalId",
+                        "data": "AssetParameters0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210S3VersionKeyFA098585",
+                        "trace": [
+                            "new FileAssetParameters (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+                            "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+                            "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+                            "SamCdkExampleStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+                            "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+                            "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+                            "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+                            "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+                            "new SamCdkExampleStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/lib/sam-cdk-example-stack.ts:15:17)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/bin/sam-cdk-example.ts:7:1)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1056:23)",
+                            "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1059:12)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:198:14)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:288:3)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+                        ]
+                    }
+                ],
+                "/SamCdkExampleStack/AssetParameters/0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210/ArtifactHash": [
+                    {
+                        "type": "aws:cdk:logicalId",
+                        "data": "AssetParameters0b83d5c2d1c14a4a759f8c5e8edf6067b58875b3e050be6d71b6e1d86fb83210ArtifactHashE65712F7",
+                        "trace": [
+                            "new FileAssetParameters (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+                            "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+                            "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+                            "SamCdkExampleStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+                            "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+                            "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+                            "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+                            "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+                            "new SamCdkExampleStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/lib/sam-cdk-example-stack.ts:15:17)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/bin/sam-cdk-example.ts:7:1)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1056:23)",
+                            "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1059:12)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:198:14)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:288:3)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+                        ]
+                    }
+                ],
+                "/SamCdkExampleStack/SamCdkExampleLambda/ServiceRole/Resource": [
+                    {
+                        "type": "aws:cdk:logicalId",
+                        "data": "SamCdkExampleLambdaServiceRoleBCDE66EC",
+                        "trace": [
+                            "new Role (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+                            "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-lambda/lib/function.ts:318:31)",
+                            "new SamCdkExampleStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/lib/sam-cdk-example-stack.ts:15:17)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/bin/sam-cdk-example.ts:7:1)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1056:23)",
+                            "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1059:12)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:198:14)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:288:3)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+                        ]
+                    }
+                ],
+                "/SamCdkExampleStack/SamCdkExampleLambda/ServiceRole/DefaultPolicy/Resource": [
+                    {
+                        "type": "aws:cdk:logicalId",
+                        "data": "SamCdkExampleLambdaServiceRoleDefaultPolicyD65B6D40",
+                        "trace": [
+                            "new Policy (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+                            "Role.addToPrincipalPolicy (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+                            "Function.addToRolePolicy (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:146:15)",
+                            "Function.buildTracingConfig (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-lambda/lib/function.ts:710:10)",
+                            "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-lambda/lib/function.ts:410:27)",
+                            "new SamCdkExampleStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/lib/sam-cdk-example-stack.ts:15:17)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/bin/sam-cdk-example.ts:7:1)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1056:23)",
+                            "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1059:12)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:198:14)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:288:3)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+                        ]
+                    }
+                ],
+                "/SamCdkExampleStack/SamCdkExampleLambda/Resource": [
+                    {
+                        "type": "aws:cdk:logicalId",
+                        "data": "SamCdkExampleLambdaD96A7BC6",
+                        "trace": [
+                            "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-lambda/lib/function.ts:388:35)",
+                            "new SamCdkExampleStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/lib/sam-cdk-example-stack.ts:15:17)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/bin/sam-cdk-example.ts:7:1)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1056:23)",
+                            "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1059:12)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:198:14)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:288:3)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+                        ]
+                    }
+                ],
+                "/SamCdkExampleStack/SamCdkExampleTable": [
+                    {
+                        "type": "aws:cdk:hasPhysicalName",
+                        "data": {
+                            "Ref": "SamCdkExampleTable3D4ECD59"
+                        },
+                        "trace": [
+                            "ConstructNode.addMetadata (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+                            "new Table (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:707:38)",
+                            "new SamCdkExampleStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/lib/sam-cdk-example-stack.ts:24:16)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/bin/sam-cdk-example.ts:7:1)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1056:23)",
+                            "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1059:12)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:198:14)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:288:3)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+                        ]
+                    }
+                ],
+                "/SamCdkExampleStack/SamCdkExampleTable/Resource": [
+                    {
+                        "type": "aws:cdk:logicalId",
+                        "data": "SamCdkExampleTable3D4ECD59",
+                        "trace": [
+                            "new Table (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:678:18)",
+                            "new SamCdkExampleStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/lib/sam-cdk-example-stack.ts:24:16)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/bin/sam-cdk-example.ts:7:1)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1056:23)",
+                            "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/index.ts:1059:12)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:198:14)",
+                            "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/ts-node/src/bin.ts:288:3)",
+                            "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+                            "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+                            "Module.load (internal/modules/cjs/loader.js:950:32)",
+                            "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+                            "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+                            "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+                        ]
+                    }
+                ],
+                "/SamCdkExampleStack/CDKMetadata/Default": [
+                    {
+                        "type": "aws:cdk:logicalId",
+                        "data": "CDKMetadata",
+                        "trace": [
+                            "new MetadataResource (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+                            "/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+                            "visit (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+                            "visit (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+                            "injectMetadataResources (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+                            "Object.synthesize (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+                            "App.synth (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+                            "process.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+                            "Object.onceWrapper (events.js:520:26)",
+                            "process.emit (events.js:400:28)",
+                            "process.emit (domain.js:475:12)",
+                            "process.emit (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/source-map-support/source-map-support.js:516:21)"
+                        ]
+                    }
+                ],
+                "/SamCdkExampleStack/CDKMetadata/Condition": [
+                    {
+                        "type": "aws:cdk:logicalId",
+                        "data": "CDKMetadataAvailable",
+                        "trace": [
+                            "new MetadataResource (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+                            "/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+                            "visit (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+                            "visit (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+                            "injectMetadataResources (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+                            "Object.synthesize (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+                            "App.synth (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+                            "process.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+                            "Object.onceWrapper (events.js:520:26)",
+                            "process.emit (events.js:400:28)",
+                            "process.emit (domain.js:475:12)",
+                            "process.emit (/home/marcio/dev/aws-lessons/typescript/sam-cdk-example/node_modules/source-map-support/source-map-support.js:516:21)"
+                        ]
+                    }
+                ]
+            },
+            "displayName": "SamCdkExampleStack"
+        }
+    }
+}
