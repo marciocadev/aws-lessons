@@ -1,13 +1,26 @@
-import { expect as expectCDK, matchTemplate, MatchStyle } from '@aws-cdk/assert';
+import { expect as expectCDK, matchTemplate, MatchStyle, haveResource } from '@aws-cdk/assert';
 import * as cdk from '@aws-cdk/core';
+import { assert } from 'console';
 import * as SamCdkExample from '../lib/sam-cdk-example-stack';
 
-test('Empty Stack', () => {
+test('Lambda exists', () => {
+    // GIVEN
     const app = new cdk.App();
     // WHEN
     const stack = new SamCdkExample.SamCdkExampleStack(app, 'MyTestStack');
     // THEN
-    expectCDK(stack).to(matchTemplate({
-      "Resources": {}
-    }, MatchStyle.EXACT))
+    expectCDK(stack).to(haveResource('AWS::Lambda::Function', {
+      Runtime: 'nodejs14.x'
+    }))
+});
+
+test('Table exists', () => {
+    // GIVEN
+    const app = new cdk.App();
+    // WHEN
+    const stack = new SamCdkExample.SamCdkExampleStack(app, 'MyTestStack');
+    // THEN
+    expectCDK(stack).to(haveResource('AWS::DynamoDB::Table', {
+      TableName: 'dbtest'
+    }))
 });

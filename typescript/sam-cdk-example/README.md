@@ -64,3 +64,6 @@ export async function handler(event: AWSLambda.APIGatewayEvent, context: AWSLamb
   ...
 }
 ``` 
+
+## Executando um teste específico
+`npm run test -- sam-cdk-example.test.ts -t 'Lambda exists'`
