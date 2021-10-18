@@ -3,7 +3,8 @@ const AWSXRay = require('aws-xray-sdk');
 const AWS = require('aws-sdk');
 const db = new AWS.DynamoDB.DocumentClient({region: 'us-east-1'})
 
-exports.handler = async(event: any, context: any) => {
+export async function handler(event: AWSLambda.APIGatewayEvent, context: AWSLambda.Context) {
+
     const res = await axios.get('https://httpbin.org/get', {
         params: {
             answer: 42

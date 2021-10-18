@@ -54,3 +54,13 @@ Após a execuçaão do comando deve aparecer no terminal uma linha similar a est
 * `Debugger listening on ws://0.0.0.0:9999/d19f8203-4cce-4daf-a902-5a7aa4adb24c` 
 
 Quando aparecer, coloque um breakpoint no lambda que se deseja debugar e execute o debug no vscode
+
+## Dicas
+Para receber os parâmetros event e context em um objeto execute os passos abaixo:
+* `npm i -D @types/aws-lambda`
+No lambda que recebe um evento do APIGateway 
+```
+export async function handler(event: AWSLambda.APIGatewayEvent, context: AWSLambda.Context) {
+  ...
+}
+``` 
