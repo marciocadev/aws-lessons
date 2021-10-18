@@ -1,12 +1,10 @@
 {
-  "name": "sam-beta-cdk-example",
+  "name": "analyze-sentiment-comprehend",
   "version": "0.1.0",
   "bin": {
-    "sam-beta-cdk-example": "bin/sam-beta-cdk-example.js"
+    "analyze-sentiment-comprehend": "bin/analyze-sentiment-comprehend.js"
   },
   "scripts": {
-    "debug": "sam-beta-cdk local invoke --profile marcio-dev -d 9999 SamBetaCdkExampleStack/lmb",
-    "local": "sam-beta-cdk local invoke --profile marcio-dev SamBetaCdkExampleStack/lmb",
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
@@ -23,9 +21,6 @@
     "typescript": "~3.9.7"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigateway": "^1.128.0",
-    "@aws-cdk/aws-dynamodb": "^1.128.0",
-    "@aws-cdk/aws-lambda": "^1.128.0",
     "@aws-cdk/core": "1.128.0",
     "source-map-support": "^0.5.16"
   }

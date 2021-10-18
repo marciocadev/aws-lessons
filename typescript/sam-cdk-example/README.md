@@ -24,7 +24,7 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 * Crie o lambda
 * execute o comando `npm init` na pasta do lambda
 * `npm run build` para gerar os arquivos do projeto em javascript
-* `sam-beta-build` para gerar o necessário para o deploy
+* `sam-beta-cdk build` para gerar o necessário para o deploy
 * `cdk deploy -a .aws-sam/build --profile marcio-dev`
 * `mkdir layers && mkdir layers/nodejs`
 * `cd layers/nodejs`
