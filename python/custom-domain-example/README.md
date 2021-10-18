@@ -52,3 +52,9 @@ cdk synth
 * https://gtw.marciocadev.com/api/get
 * https://site.marciocadev.com/api/get
 * https://site.marciocadev.com/
+
+## Rodando localmente
+* sam-beta-cdk build --parallel
+* sam-beta-cdk local invoke CustomDomainExampleStack/gtw-lmb
+* sam-beta-cdk local invoke CustomDomainExampleStack/gtw2-lmb
+* sam-beta-cdk local invoke --debug-port 5678 CustomDomainExampleStack/gtw-lmb

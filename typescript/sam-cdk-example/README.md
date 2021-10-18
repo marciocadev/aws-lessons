@@ -67,3 +67,10 @@ export async function handler(event: AWSLambda.APIGatewayEvent, context: AWSLamb
 
 ## Executando um teste específico
 `npm run test -- sam-cdk-example.test.ts -t 'Lambda exists'`
+
+## Listas os tipos de eventos
+`sam local generate-event --help` Lista os tipos de eventos
+`sam local generate-event apigateway --help` Lista os tipos de eventos do apigateway
+
+## Gerando um event para o apigateway
+`sam local generate-event apigateway aws-proxy > events/apigateway-event.json` 

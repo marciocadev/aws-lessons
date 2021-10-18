@@ -1,17 +1,24 @@
 const axios = require('axios');
-const AWSXRay = require('aws-xray-sdk');
-const AWS = require('aws-sdk');
-//const AWS = AWSXRay.captureAWS(require('aws-sdk'));
+if (!process.env.AWS_SAM_LOCAL) {
+    const AWSXRay = require('aws-xray-sdk');
+    var AWS = AWSXRay.captureAWS(require('aws-sdk'));    
+}
+else {
+    var AWS = require('aws-sdk');
+}
 const db = new AWS.DynamoDB.DocumentClient({region: 'us-east-1'})
 
-export async function handler(event: AWSLambda.APIGatewayEvent, context: AWSLambda.Context) {
+export async function handler(event: AWSLambda.APIGatewayEvent,
+                            context: AWSLambda.Context) {
     
-    // AWS.captureFunc('annotations', function(subsegment: any){
-    //     subsegment.addAnnotation('Name', "teste");
-    //     subsegment.addAnnotation('UserID', event.userid);
-    //   });
+    if (!process.env.AWS_SAM_LOCAL) {
+        AWS.captureFunc('annotations', function(subsegment: any){
+            subsegment.addAnnotation('Name', "teste");
+            subsegment.addAnnotation('UserID', event.body);
+        });
+    }
 
-    const res = await axios.get('https://httpbin.org/get', {
+    let res = await axios.get('https://httpbin.org/get', {
         params: {
             answer: 42
         }
@@ -20,8 +27,9 @@ export async function handler(event: AWSLambda.APIGatewayEvent, context: AWSLamb
     const params = {
         TableName: 'dbtest',
         Item: {
-            id: 'teste',
-            get: res.data.args
+            id: 'teste2',
+            get: res.data.args,
+            event: event
         }
     }
 

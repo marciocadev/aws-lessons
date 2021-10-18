@@ -1,6 +1,7 @@
 import { Stack, Construct, StackProps, Duration, RemovalPolicy } from '@aws-cdk/core';
 import { Code, Function, LayerVersion, Runtime, Tracing } from '@aws-cdk/aws-lambda';
 import { AttributeType, Table } from '@aws-cdk/aws-dynamodb';
+import { LambdaRestApi, LambdaIntegration, Integration } from '@aws-cdk/aws-apigateway';
 import { RetentionDays } from '@aws-cdk/aws-logs';
 
 export class SamCdkExampleStack extends Stack {
@@ -31,5 +32,14 @@ export class SamCdkExampleStack extends Stack {
       }
     });
     db.grantWriteData(lmb);
+
+    const gtw = new LambdaRestApi(this, 'SamCdkExampleApiGateway', { 
+      handler: lmb, 
+      proxy: false 
+    });
+
+    const resource = gtw.root.addResource('api')
+    const res_post = resource.addResource('post')
+    res_post.addMethod('post', new LambdaIntegration(lmb))
   }
 }
