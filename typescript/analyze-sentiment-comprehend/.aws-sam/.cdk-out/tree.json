@@ -1,0 +1,299 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree",
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Construct",
+          "version": "1.128.0"
+        }
+      },
+      "AnalyzeSentimentComprehendStack": {
+        "id": "AnalyzeSentimentComprehendStack",
+        "path": "AnalyzeSentimentComprehendStack",
+        "children": {
+          "DetectSentiment": {
+            "id": "DetectSentiment",
+            "path": "AnalyzeSentimentComprehendStack/DetectSentiment",
+            "children": {
+              "ServiceRole": {
+                "id": "ServiceRole",
+                "path": "AnalyzeSentimentComprehendStack/DetectSentiment/ServiceRole",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "AnalyzeSentimentComprehendStack/DetectSentiment/ServiceRole/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                      "aws:cdk:cloudformation:props": {
+                        "assumeRolePolicyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "sts:AssumeRole",
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Service": "lambda.amazonaws.com"
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "managedPolicyArns": [
+                          {
+                            "Fn::Join": [
+                              "",
+                              [
+                                "arn:",
+                                {
+                                  "Ref": "AWS::Partition"
+                                },
+                                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                              ]
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.CfnRole",
+                      "version": "1.129.0"
+                    }
+                  },
+                  "DefaultPolicy": {
+                    "id": "DefaultPolicy",
+                    "path": "AnalyzeSentimentComprehendStack/DetectSentiment/ServiceRole/DefaultPolicy",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "AnalyzeSentimentComprehendStack/DetectSentiment/ServiceRole/DefaultPolicy/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                          "aws:cdk:cloudformation:props": {
+                            "policyDocument": {
+                              "Statement": [
+                                {
+                                  "Action": [
+                                    "comprehend:DetectDominantLanguage",
+                                    "comprehend:DetectEntities",
+                                    "comprehend:DetectSentiment"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": "*"
+                                }
+                              ],
+                              "Version": "2012-10-17"
+                            },
+                            "policyName": "DetectSentimentServiceRoleDefaultPolicyAB7E2614",
+                            "roles": [
+                              {
+                                "Ref": "DetectSentimentServiceRole4314AEBF"
+                              }
+                            ]
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-iam.CfnPolicy",
+                          "version": "1.129.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.Policy",
+                      "version": "1.129.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-iam.Role",
+                  "version": "1.129.0"
+                }
+              },
+              "Code": {
+                "id": "Code",
+                "path": "AnalyzeSentimentComprehendStack/DetectSentiment/Code",
+                "children": {
+                  "Stage": {
+                    "id": "Stage",
+                    "path": "AnalyzeSentimentComprehendStack/DetectSentiment/Code/Stage",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.AssetStaging",
+                      "version": "1.129.0"
+                    }
+                  },
+                  "AssetBucket": {
+                    "id": "AssetBucket",
+                    "path": "AnalyzeSentimentComprehendStack/DetectSentiment/Code/AssetBucket",
+                    "children": {
+                      "Notifications": {
+                        "id": "Notifications",
+                        "path": "AnalyzeSentimentComprehendStack/DetectSentiment/Code/AssetBucket/Notifications",
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/core.Construct",
+                          "version": "1.129.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-s3.BucketBase",
+                      "version": "1.129.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-s3-assets.Asset",
+                  "version": "1.129.0"
+                }
+              },
+              "Resource": {
+                "id": "Resource",
+                "path": "AnalyzeSentimentComprehendStack/DetectSentiment/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
+                  "aws:cdk:cloudformation:props": {
+                    "code": {
+                      "s3Bucket": {
+                        "Ref": "AssetParameters4e26307637464c8ec22ed7bb9cd3ffd9b4b6ff46e03c02b83fb79984dffaeff1S3Bucket43D88F61"
+                      },
+                      "s3Key": {
+                        "Fn::Join": [
+                          "",
+                          [
+                            {
+                              "Fn::Select": [
+                                0,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParameters4e26307637464c8ec22ed7bb9cd3ffd9b4b6ff46e03c02b83fb79984dffaeff1S3VersionKey78A15B4F"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Fn::Select": [
+                                1,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParameters4e26307637464c8ec22ed7bb9cd3ffd9b4b6ff46e03c02b83fb79984dffaeff1S3VersionKey78A15B4F"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    },
+                    "role": {
+                      "Fn::GetAtt": [
+                        "DetectSentimentServiceRole4314AEBF",
+                        "Arn"
+                      ]
+                    },
+                    "handler": "index.handler",
+                    "runtime": "nodejs14.x",
+                    "timeout": 180
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-lambda.CfnFunction",
+                  "version": "1.129.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-lambda.Function",
+              "version": "1.129.0"
+            }
+          },
+          "AssetParameters": {
+            "id": "AssetParameters",
+            "path": "AnalyzeSentimentComprehendStack/AssetParameters",
+            "children": {
+              "4e26307637464c8ec22ed7bb9cd3ffd9b4b6ff46e03c02b83fb79984dffaeff1": {
+                "id": "4e26307637464c8ec22ed7bb9cd3ffd9b4b6ff46e03c02b83fb79984dffaeff1",
+                "path": "AnalyzeSentimentComprehendStack/AssetParameters/4e26307637464c8ec22ed7bb9cd3ffd9b4b6ff46e03c02b83fb79984dffaeff1",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "AnalyzeSentimentComprehendStack/AssetParameters/4e26307637464c8ec22ed7bb9cd3ffd9b4b6ff46e03c02b83fb79984dffaeff1/S3Bucket",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.128.0"
+                    }
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "AnalyzeSentimentComprehendStack/AssetParameters/4e26307637464c8ec22ed7bb9cd3ffd9b4b6ff46e03c02b83fb79984dffaeff1/S3VersionKey",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.128.0"
+                    }
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "AnalyzeSentimentComprehendStack/AssetParameters/4e26307637464c8ec22ed7bb9cd3ffd9b4b6ff46e03c02b83fb79984dffaeff1/ArtifactHash",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.128.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Construct",
+                  "version": "1.128.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Construct",
+              "version": "1.128.0"
+            }
+          },
+          "CDKMetadata": {
+            "id": "CDKMetadata",
+            "path": "AnalyzeSentimentComprehendStack/CDKMetadata",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "AnalyzeSentimentComprehendStack/CDKMetadata/Default",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnResource",
+                  "version": "1.128.0"
+                }
+              },
+              "Condition": {
+                "id": "Condition",
+                "path": "AnalyzeSentimentComprehendStack/CDKMetadata/Condition",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnCondition",
+                  "version": "1.128.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Construct",
+              "version": "1.128.0"
+            }
+          }
+        },
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Stack",
+          "version": "1.128.0"
+        }
+      }
+    },
+    "constructInfo": {
+      "fqn": "@aws-cdk/core.App",
+      "version": "1.128.0"
+    }
+  }
+}

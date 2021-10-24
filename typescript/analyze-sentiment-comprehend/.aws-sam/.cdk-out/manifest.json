@@ -1,0 +1,283 @@
+{
+  "version": "14.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "AnalyzeSentimentComprehendStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "AnalyzeSentimentComprehendStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/AnalyzeSentimentComprehendStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/lambda-fns/comprehend",
+              "id": "4e26307637464c8ec22ed7bb9cd3ffd9b4b6ff46e03c02b83fb79984dffaeff1",
+              "packaging": "zip",
+              "sourceHash": "4e26307637464c8ec22ed7bb9cd3ffd9b4b6ff46e03c02b83fb79984dffaeff1",
+              "s3BucketParameter": "AssetParameters4e26307637464c8ec22ed7bb9cd3ffd9b4b6ff46e03c02b83fb79984dffaeff1S3Bucket43D88F61",
+              "s3KeyParameter": "AssetParameters4e26307637464c8ec22ed7bb9cd3ffd9b4b6ff46e03c02b83fb79984dffaeff1S3VersionKey78A15B4F",
+              "artifactHashParameter": "AssetParameters4e26307637464c8ec22ed7bb9cd3ffd9b4b6ff46e03c02b83fb79984dffaeff1ArtifactHashEFA5F967"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:161:23)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "AnalyzeSentimentComprehendStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new AnalyzeSentimentComprehendStack (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/lib/analyze-sentiment-comprehend-stack.ts:10:30)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/bin/analyze-sentiment-comprehend.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AnalyzeSentimentComprehendStack/DetectSentiment/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DetectSentimentServiceRole4314AEBF",
+            "trace": [
+              "new Role (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/aws-lambda/lib/function.ts:318:31)",
+              "new AnalyzeSentimentComprehendStack (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/lib/analyze-sentiment-comprehend-stack.ts:10:30)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/bin/analyze-sentiment-comprehend.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AnalyzeSentimentComprehendStack/DetectSentiment/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DetectSentimentServiceRoleDefaultPolicyAB7E2614",
+            "trace": [
+              "new Policy (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "Function.addToRolePolicy (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:146:15)",
+              "new AnalyzeSentimentComprehendStack (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/lib/analyze-sentiment-comprehend-stack.ts:26:22)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/bin/analyze-sentiment-comprehend.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AnalyzeSentimentComprehendStack/DetectSentiment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DetectSentiment1915DA77",
+            "trace": [
+              "new Function (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/aws-lambda/lib/function.ts:388:35)",
+              "new AnalyzeSentimentComprehendStack (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/lib/analyze-sentiment-comprehend-stack.ts:10:30)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/bin/analyze-sentiment-comprehend.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AnalyzeSentimentComprehendStack/AssetParameters/4e26307637464c8ec22ed7bb9cd3ffd9b4b6ff46e03c02b83fb79984dffaeff1/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters4e26307637464c8ec22ed7bb9cd3ffd9b4b6ff46e03c02b83fb79984dffaeff1S3Bucket43D88F61",
+            "trace": [
+              "new FileAssetParameters (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "AnalyzeSentimentComprehendStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new AnalyzeSentimentComprehendStack (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/lib/analyze-sentiment-comprehend-stack.ts:10:30)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/bin/analyze-sentiment-comprehend.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AnalyzeSentimentComprehendStack/AssetParameters/4e26307637464c8ec22ed7bb9cd3ffd9b4b6ff46e03c02b83fb79984dffaeff1/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters4e26307637464c8ec22ed7bb9cd3ffd9b4b6ff46e03c02b83fb79984dffaeff1S3VersionKey78A15B4F",
+            "trace": [
+              "new FileAssetParameters (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "AnalyzeSentimentComprehendStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new AnalyzeSentimentComprehendStack (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/lib/analyze-sentiment-comprehend-stack.ts:10:30)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/bin/analyze-sentiment-comprehend.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AnalyzeSentimentComprehendStack/AssetParameters/4e26307637464c8ec22ed7bb9cd3ffd9b4b6ff46e03c02b83fb79984dffaeff1/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters4e26307637464c8ec22ed7bb9cd3ffd9b4b6ff46e03c02b83fb79984dffaeff1ArtifactHashEFA5F967",
+            "trace": [
+              "new FileAssetParameters (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "AnalyzeSentimentComprehendStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new AnalyzeSentimentComprehendStack (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/lib/analyze-sentiment-comprehend-stack.ts:10:30)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/bin/analyze-sentiment-comprehend.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AnalyzeSentimentComprehendStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:475:12)",
+              "process.emit (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/AnalyzeSentimentComprehendStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:475:12)",
+              "process.emit (/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "AnalyzeSentimentComprehendStack"
+    }
+  }
+}

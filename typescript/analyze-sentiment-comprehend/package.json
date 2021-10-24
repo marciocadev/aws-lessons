@@ -5,6 +5,8 @@
     "analyze-sentiment-comprehend": "bin/analyze-sentiment-comprehend.js"
   },
   "scripts": {
+    "deploy": "cdk deploy -a .aws-sam/build --profile marcio-dev --require-approval=never --all",
+    "destroy": "cdk destroy -a .aws-sam/build --profile marcio-dev -f",
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
@@ -21,6 +23,9 @@
     "typescript": "~3.9.7"
   },
   "dependencies": {
+    "@aws-cdk/aws-cloudwatch": "^1.129.0",
+    "@aws-cdk/aws-iam": "^1.129.0",
+    "@aws-cdk/aws-lambda": "^1.129.0",
     "@aws-cdk/core": "1.128.0",
     "source-map-support": "^0.5.16"
   }
