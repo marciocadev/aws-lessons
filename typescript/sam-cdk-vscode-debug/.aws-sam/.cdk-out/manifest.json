@@ -1,0 +1,1403 @@
+{
+  "version": "14.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "SamCdkVscodeDebugStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "SamCdkVscodeDebugStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/SamCdkVscodeDebugStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/layer",
+              "id": "0263ae106b1f0404daa7c25256bfb77ee6738d7a52c3b035a150b72e7c53af29",
+              "packaging": "zip",
+              "sourceHash": "0263ae106b1f0404daa7c25256bfb77ee6738d7a52c3b035a150b72e7c53af29",
+              "s3BucketParameter": "AssetParameters0263ae106b1f0404daa7c25256bfb77ee6738d7a52c3b035a150b72e7c53af29S3BucketEA49960A",
+              "s3KeyParameter": "AssetParameters0263ae106b1f0404daa7c25256bfb77ee6738d7a52c3b035a150b72e7c53af29S3VersionKey629E0225",
+              "artifactHashParameter": "AssetParameters0263ae106b1f0404daa7c25256bfb77ee6738d7a52c3b035a150b72e7c53af29ArtifactHash20ABFE95"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:161:23)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "SamCdkVscodeDebugStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new LayerVersion (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:124:29)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:11:19)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lambda-fns/post",
+              "id": "c3aa2f1b357d68f940498df58647d02dcb273c4d63eba6e5cd5eda21945d9a0c",
+              "packaging": "zip",
+              "sourceHash": "c3aa2f1b357d68f940498df58647d02dcb273c4d63eba6e5cd5eda21945d9a0c",
+              "s3BucketParameter": "AssetParametersc3aa2f1b357d68f940498df58647d02dcb273c4d63eba6e5cd5eda21945d9a0cS3Bucket9D27180D",
+              "s3KeyParameter": "AssetParametersc3aa2f1b357d68f940498df58647d02dcb273c4d63eba6e5cd5eda21945d9a0cS3VersionKeyAD12CD75",
+              "artifactHashParameter": "AssetParametersc3aa2f1b357d68f940498df58647d02dcb273c4d63eba6e5cd5eda21945d9a0cArtifactHashA1B354E2"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:161:23)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "SamCdkVscodeDebugStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:25:24)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention-provider",
+              "id": "b120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827",
+              "packaging": "zip",
+              "sourceHash": "b120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827",
+              "s3BucketParameter": "AssetParametersb120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827S3Bucket2070BA0A",
+              "s3KeyParameter": "AssetParametersb120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827S3VersionKeyB95D17C3",
+              "artifactHashParameter": "AssetParametersb120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827ArtifactHash1355580A"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:161:23)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "SamCdkVscodeDebugStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "new LogRetentionFunction (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:103:19)",
+              "LogRetention.ensureSingletonLogRetentionFunction (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:89:12)",
+              "new LogRetention (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:48:27)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:449:28)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:25:24)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lambda-fns/get",
+              "id": "c74dfb7958b9b232d6c4163ee15763c719baf35f795e90d0fa068a1e33ee07ef",
+              "packaging": "zip",
+              "sourceHash": "c74dfb7958b9b232d6c4163ee15763c719baf35f795e90d0fa068a1e33ee07ef",
+              "s3BucketParameter": "AssetParametersc74dfb7958b9b232d6c4163ee15763c719baf35f795e90d0fa068a1e33ee07efS3BucketB4632229",
+              "s3KeyParameter": "AssetParametersc74dfb7958b9b232d6c4163ee15763c719baf35f795e90d0fa068a1e33ee07efS3VersionKeyDF83A2E2",
+              "artifactHashParameter": "AssetParametersc74dfb7958b9b232d6c4163ee15763c719baf35f795e90d0fa068a1e33ee07efArtifactHashF33A24C2"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:161:23)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "SamCdkVscodeDebugStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:39:17)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugLayer320A8508",
+            "trace": [
+              "new LayerVersion (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:132:39)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:11:19)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/AssetParameters/0263ae106b1f0404daa7c25256bfb77ee6738d7a52c3b035a150b72e7c53af29/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters0263ae106b1f0404daa7c25256bfb77ee6738d7a52c3b035a150b72e7c53af29S3BucketEA49960A",
+            "trace": [
+              "new FileAssetParameters (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "SamCdkVscodeDebugStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new LayerVersion (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:124:29)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:11:19)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/AssetParameters/0263ae106b1f0404daa7c25256bfb77ee6738d7a52c3b035a150b72e7c53af29/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters0263ae106b1f0404daa7c25256bfb77ee6738d7a52c3b035a150b72e7c53af29S3VersionKey629E0225",
+            "trace": [
+              "new FileAssetParameters (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "SamCdkVscodeDebugStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new LayerVersion (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:124:29)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:11:19)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/AssetParameters/0263ae106b1f0404daa7c25256bfb77ee6738d7a52c3b035a150b72e7c53af29/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters0263ae106b1f0404daa7c25256bfb77ee6738d7a52c3b035a150b72e7c53af29ArtifactHash20ABFE95",
+            "trace": [
+              "new FileAssetParameters (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "SamCdkVscodeDebugStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new LayerVersion (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:124:29)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:11:19)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/AssetParameters/c3aa2f1b357d68f940498df58647d02dcb273c4d63eba6e5cd5eda21945d9a0c/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersc3aa2f1b357d68f940498df58647d02dcb273c4d63eba6e5cd5eda21945d9a0cS3Bucket9D27180D",
+            "trace": [
+              "new FileAssetParameters (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "SamCdkVscodeDebugStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:25:24)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/AssetParameters/c3aa2f1b357d68f940498df58647d02dcb273c4d63eba6e5cd5eda21945d9a0c/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersc3aa2f1b357d68f940498df58647d02dcb273c4d63eba6e5cd5eda21945d9a0cS3VersionKeyAD12CD75",
+            "trace": [
+              "new FileAssetParameters (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "SamCdkVscodeDebugStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:25:24)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/AssetParameters/c3aa2f1b357d68f940498df58647d02dcb273c4d63eba6e5cd5eda21945d9a0c/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersc3aa2f1b357d68f940498df58647d02dcb273c4d63eba6e5cd5eda21945d9a0cArtifactHashA1B354E2",
+            "trace": [
+              "new FileAssetParameters (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "SamCdkVscodeDebugStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:25:24)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/AssetParameters/b120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersb120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827S3Bucket2070BA0A",
+            "trace": [
+              "new FileAssetParameters (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "SamCdkVscodeDebugStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "new LogRetentionFunction (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:103:19)",
+              "LogRetention.ensureSingletonLogRetentionFunction (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:89:12)",
+              "new LogRetention (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:48:27)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:449:28)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:25:24)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/AssetParameters/b120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersb120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827S3VersionKeyB95D17C3",
+            "trace": [
+              "new FileAssetParameters (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "SamCdkVscodeDebugStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "new LogRetentionFunction (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:103:19)",
+              "LogRetention.ensureSingletonLogRetentionFunction (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:89:12)",
+              "new LogRetention (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:48:27)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:449:28)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:25:24)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/AssetParameters/b120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersb120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827ArtifactHash1355580A",
+            "trace": [
+              "new FileAssetParameters (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "SamCdkVscodeDebugStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "new LogRetentionFunction (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:103:19)",
+              "LogRetention.ensureSingletonLogRetentionFunction (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:89:12)",
+              "new LogRetention (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:48:27)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:449:28)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:25:24)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/AssetParameters/c74dfb7958b9b232d6c4163ee15763c719baf35f795e90d0fa068a1e33ee07ef/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersc74dfb7958b9b232d6c4163ee15763c719baf35f795e90d0fa068a1e33ee07efS3BucketB4632229",
+            "trace": [
+              "new FileAssetParameters (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "SamCdkVscodeDebugStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:39:17)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/AssetParameters/c74dfb7958b9b232d6c4163ee15763c719baf35f795e90d0fa068a1e33ee07ef/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersc74dfb7958b9b232d6c4163ee15763c719baf35f795e90d0fa068a1e33ee07efS3VersionKeyDF83A2E2",
+            "trace": [
+              "new FileAssetParameters (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "SamCdkVscodeDebugStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:39:17)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/AssetParameters/c74dfb7958b9b232d6c4163ee15763c719baf35f795e90d0fa068a1e33ee07ef/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersc74dfb7958b9b232d6c4163ee15763c719baf35f795e90d0fa068a1e33ee07efArtifactHashF33A24C2",
+            "trace": [
+              "new FileAssetParameters (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "SamCdkVscodeDebugStack.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:39:17)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugTable": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "SamCdkVscodeDebugTable22CBC65F"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "new Table (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:710:38)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:16:19)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugTable22CBC65F",
+            "trace": [
+              "new Table (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:681:18)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:16:19)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaPost/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugLambdaPostServiceRole78EF027D",
+            "trace": [
+              "new Role (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:318:31)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:25:24)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaPost/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugLambdaPostServiceRoleDefaultPolicy70BFE68A",
+            "trace": [
+              "new Policy (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "Function.addToRolePolicy (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:146:15)",
+              "Function.buildTracingConfig (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:715:10)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:410:27)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:25:24)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaPost/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugLambdaPost003294BB",
+            "trace": [
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:388:35)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:25:24)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaPost/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugLambdaPostLogRetention3F610647",
+            "trace": [
+              "new LogRetention (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:53:22)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:449:28)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:25:24)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB",
+            "trace": [
+              "new Role (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new LogRetentionFunction (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:108:32)",
+              "LogRetention.ensureSingletonLogRetentionFunction (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:89:12)",
+              "new LogRetention (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:48:27)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:449:28)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:25:24)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB",
+            "trace": [
+              "new Policy (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "new LogRetentionFunction (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:113:10)",
+              "LogRetention.ensureSingletonLogRetentionFunction (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:89:12)",
+              "new LogRetention (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:48:27)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:449:28)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:25:24)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A",
+            "trace": [
+              "new LogRetentionFunction (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:122:22)",
+              "LogRetention.ensureSingletonLogRetentionFunction (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:89:12)",
+              "new LogRetention (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:48:27)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:449:28)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:25:24)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaGet/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugLambdaGetServiceRoleD312567F",
+            "trace": [
+              "new Role (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:318:31)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:39:17)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaGet/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugLambdaGetServiceRoleDefaultPolicyB96F083E",
+            "trace": [
+              "new Policy (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "Function.addToRolePolicy (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:146:15)",
+              "Function.buildTracingConfig (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:715:10)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:410:27)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:39:17)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaGet/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugLambdaGet69054DC7",
+            "trace": [
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:388:35)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:39:17)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaGet/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugLambdaGetLogRetentionE49D12A3",
+            "trace": [
+              "new LogRetention (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:53:22)",
+              "new Function (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function.ts:449:28)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:39:17)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugApiGatewayF01468B5",
+            "trace": [
+              "new RestApi (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:463:22)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:53:17)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugApiGatewayCloudWatchRole89D635FF",
+            "trace": [
+              "new Role (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "RestApi._configureCloudWatchRole (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:289:18)",
+              "new RestApi (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:481:12)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:53:17)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugApiGatewayAccountB9470095",
+            "trace": [
+              "RestApi._configureCloudWatchRole (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:294:22)",
+              "new RestApi (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:481:12)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:53:17)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugApiGatewayDeploymentBC911C9A0be3c1ff7d9100bc884e0bbc4a793dc4",
+            "trace": [
+              "new Deployment (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/deployment.ts:34:21)",
+              "RestApi._configureDeployment (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:318:32)",
+              "new RestApi (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:484:10)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:53:17)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugApiGatewayDeploymentStageprod94FB928B",
+            "trace": [
+              "new Stage (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/stage.ts:136:22)",
+              "RestApi._configureDeployment (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:328:30)",
+              "new RestApi (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:484:10)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:53:17)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugApiGatewayEndpoint17C96D4F",
+            "trace": [
+              "RestApi._configureDeployment (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:333:7)",
+              "new RestApi (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:484:10)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:53:17)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Default/api/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugApiGatewayapi2391A5E8",
+            "trace": [
+              "new Resource (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:342:22)",
+              "RootResource.addResource (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:91:12)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:56:31)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Default/api/post/ApiPermission.SamCdkVscodeDebugStackSamCdkVscodeDebugApiGateway70B38605.POST..api": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugApiGatewayapipostApiPermissionSamCdkVscodeDebugStackSamCdkVscodeDebugApiGateway70B38605POSTapiA4FE0B05",
+            "trace": [
+              "Function.addPermission (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:41:18)",
+              "new Method (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "Resource.addMethod (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:57:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Default/api/post/ApiPermission.Test.SamCdkVscodeDebugStackSamCdkVscodeDebugApiGateway70B38605.POST..api": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugApiGatewayapipostApiPermissionTestSamCdkVscodeDebugStackSamCdkVscodeDebugApiGateway70B38605POSTapi8C5B2DCB",
+            "trace": [
+              "Function.addPermission (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:49:20)",
+              "new Method (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "Resource.addMethod (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:57:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Default/api/post/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugApiGatewayapipost96754574",
+            "trace": [
+              "new Method (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
+              "Resource.addMethod (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:57:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Default/api/{id}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugApiGatewayapiid8F010994",
+            "trace": [
+              "new Resource (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:342:22)",
+              "Resource.addResource (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:91:12)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:58:28)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Default/api/{id}/get/ApiPermission.SamCdkVscodeDebugStackSamCdkVscodeDebugApiGateway70B38605.GET..api.{id}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugApiGatewayapiidgetApiPermissionSamCdkVscodeDebugStackSamCdkVscodeDebugApiGateway70B38605GETapiidEB939F85",
+            "trace": [
+              "Function.addPermission (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:41:18)",
+              "new Method (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "Resource.addMethod (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:59:11)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Default/api/{id}/get/ApiPermission.Test.SamCdkVscodeDebugStackSamCdkVscodeDebugApiGateway70B38605.GET..api.{id}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugApiGatewayapiidgetApiPermissionTestSamCdkVscodeDebugStackSamCdkVscodeDebugApiGateway70B38605GETapiid9860BB31",
+            "trace": [
+              "Function.addPermission (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:49:20)",
+              "new Method (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "Resource.addMethod (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:59:11)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Default/api/{id}/get/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SamCdkVscodeDebugApiGatewayapiidget3433A0CC",
+            "trace": [
+              "new Method (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
+              "Resource.addMethod (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new SamCdkVscodeDebugStack (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/lib/sam-cdk-vscode-debug-stack.ts:59:11)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/bin/sam-cdk-vscode-debug.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:475:12)",
+              "process.emit (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/SamCdkVscodeDebugStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:475:12)",
+              "process.emit (/home/marcio/dev/aws-lessons/typescript/sam-cdk-vscode-debug/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "SamCdkVscodeDebugStack"
+    }
+  }
+}

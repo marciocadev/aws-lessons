@@ -1,0 +1,1549 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree",
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Construct",
+          "version": "1.129.0"
+        }
+      },
+      "SamCdkVscodeDebugStack": {
+        "id": "SamCdkVscodeDebugStack",
+        "path": "SamCdkVscodeDebugStack",
+        "children": {
+          "SamCdkVscodeDebugLayer": {
+            "id": "SamCdkVscodeDebugLayer",
+            "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLayer",
+            "children": {
+              "Code": {
+                "id": "Code",
+                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLayer/Code",
+                "children": {
+                  "Stage": {
+                    "id": "Stage",
+                    "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLayer/Code/Stage",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.AssetStaging",
+                      "version": "1.129.0"
+                    }
+                  },
+                  "AssetBucket": {
+                    "id": "AssetBucket",
+                    "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLayer/Code/AssetBucket",
+                    "children": {
+                      "Notifications": {
+                        "id": "Notifications",
+                        "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLayer/Code/AssetBucket/Notifications",
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/core.Construct",
+                          "version": "1.129.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-s3.BucketBase",
+                      "version": "1.129.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-s3-assets.Asset",
+                  "version": "1.129.0"
+                }
+              },
+              "Resource": {
+                "id": "Resource",
+                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLayer/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Lambda::LayerVersion",
+                  "aws:cdk:cloudformation:props": {
+                    "content": {
+                      "s3Bucket": {
+                        "Ref": "AssetParameters0263ae106b1f0404daa7c25256bfb77ee6738d7a52c3b035a150b72e7c53af29S3BucketEA49960A"
+                      },
+                      "s3Key": {
+                        "Fn::Join": [
+                          "",
+                          [
+                            {
+                              "Fn::Select": [
+                                0,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParameters0263ae106b1f0404daa7c25256bfb77ee6738d7a52c3b035a150b72e7c53af29S3VersionKey629E0225"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Fn::Select": [
+                                1,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParameters0263ae106b1f0404daa7c25256bfb77ee6738d7a52c3b035a150b72e7c53af29S3VersionKey629E0225"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    },
+                    "compatibleRuntimes": [
+                      "nodejs14.x"
+                    ]
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-lambda.CfnLayerVersion",
+                  "version": "1.129.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-lambda.LayerVersion",
+              "version": "1.129.0"
+            }
+          },
+          "AssetParameters": {
+            "id": "AssetParameters",
+            "path": "SamCdkVscodeDebugStack/AssetParameters",
+            "children": {
+              "0263ae106b1f0404daa7c25256bfb77ee6738d7a52c3b035a150b72e7c53af29": {
+                "id": "0263ae106b1f0404daa7c25256bfb77ee6738d7a52c3b035a150b72e7c53af29",
+                "path": "SamCdkVscodeDebugStack/AssetParameters/0263ae106b1f0404daa7c25256bfb77ee6738d7a52c3b035a150b72e7c53af29",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "SamCdkVscodeDebugStack/AssetParameters/0263ae106b1f0404daa7c25256bfb77ee6738d7a52c3b035a150b72e7c53af29/S3Bucket",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.129.0"
+                    }
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "SamCdkVscodeDebugStack/AssetParameters/0263ae106b1f0404daa7c25256bfb77ee6738d7a52c3b035a150b72e7c53af29/S3VersionKey",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.129.0"
+                    }
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "SamCdkVscodeDebugStack/AssetParameters/0263ae106b1f0404daa7c25256bfb77ee6738d7a52c3b035a150b72e7c53af29/ArtifactHash",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.129.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Construct",
+                  "version": "1.129.0"
+                }
+              },
+              "c3aa2f1b357d68f940498df58647d02dcb273c4d63eba6e5cd5eda21945d9a0c": {
+                "id": "c3aa2f1b357d68f940498df58647d02dcb273c4d63eba6e5cd5eda21945d9a0c",
+                "path": "SamCdkVscodeDebugStack/AssetParameters/c3aa2f1b357d68f940498df58647d02dcb273c4d63eba6e5cd5eda21945d9a0c",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "SamCdkVscodeDebugStack/AssetParameters/c3aa2f1b357d68f940498df58647d02dcb273c4d63eba6e5cd5eda21945d9a0c/S3Bucket",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.129.0"
+                    }
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "SamCdkVscodeDebugStack/AssetParameters/c3aa2f1b357d68f940498df58647d02dcb273c4d63eba6e5cd5eda21945d9a0c/S3VersionKey",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.129.0"
+                    }
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "SamCdkVscodeDebugStack/AssetParameters/c3aa2f1b357d68f940498df58647d02dcb273c4d63eba6e5cd5eda21945d9a0c/ArtifactHash",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.129.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Construct",
+                  "version": "1.129.0"
+                }
+              },
+              "b120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827": {
+                "id": "b120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827",
+                "path": "SamCdkVscodeDebugStack/AssetParameters/b120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "SamCdkVscodeDebugStack/AssetParameters/b120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827/S3Bucket",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.129.0"
+                    }
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "SamCdkVscodeDebugStack/AssetParameters/b120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827/S3VersionKey",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.129.0"
+                    }
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "SamCdkVscodeDebugStack/AssetParameters/b120b13d9d868c7622e7db1b68bae4c0f82ffd0227b8c15f2cef38e186ff3827/ArtifactHash",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.129.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Construct",
+                  "version": "1.129.0"
+                }
+              },
+              "c74dfb7958b9b232d6c4163ee15763c719baf35f795e90d0fa068a1e33ee07ef": {
+                "id": "c74dfb7958b9b232d6c4163ee15763c719baf35f795e90d0fa068a1e33ee07ef",
+                "path": "SamCdkVscodeDebugStack/AssetParameters/c74dfb7958b9b232d6c4163ee15763c719baf35f795e90d0fa068a1e33ee07ef",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "SamCdkVscodeDebugStack/AssetParameters/c74dfb7958b9b232d6c4163ee15763c719baf35f795e90d0fa068a1e33ee07ef/S3Bucket",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.129.0"
+                    }
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "SamCdkVscodeDebugStack/AssetParameters/c74dfb7958b9b232d6c4163ee15763c719baf35f795e90d0fa068a1e33ee07ef/S3VersionKey",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.129.0"
+                    }
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "SamCdkVscodeDebugStack/AssetParameters/c74dfb7958b9b232d6c4163ee15763c719baf35f795e90d0fa068a1e33ee07ef/ArtifactHash",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.129.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Construct",
+                  "version": "1.129.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Construct",
+              "version": "1.129.0"
+            }
+          },
+          "SamCdkVscodeDebugTable": {
+            "id": "SamCdkVscodeDebugTable",
+            "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugTable",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugTable/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::DynamoDB::Table",
+                  "aws:cdk:cloudformation:props": {
+                    "keySchema": [
+                      {
+                        "attributeName": "id",
+                        "keyType": "HASH"
+                      }
+                    ],
+                    "attributeDefinitions": [
+                      {
+                        "attributeName": "id",
+                        "attributeType": "S"
+                      }
+                    ],
+                    "provisionedThroughput": {
+                      "readCapacityUnits": 5,
+                      "writeCapacityUnits": 5
+                    },
+                    "tableName": "sam-cdk-vscode-debug-table"
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-dynamodb.CfnTable",
+                  "version": "1.129.0"
+                }
+              },
+              "ScalingRole": {
+                "id": "ScalingRole",
+                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugTable/ScalingRole",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Resource",
+                  "version": "1.129.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-dynamodb.Table",
+              "version": "1.129.0"
+            }
+          },
+          "SamCdkVscodeDebugLambdaPost": {
+            "id": "SamCdkVscodeDebugLambdaPost",
+            "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaPost",
+            "children": {
+              "ServiceRole": {
+                "id": "ServiceRole",
+                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaPost/ServiceRole",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaPost/ServiceRole/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                      "aws:cdk:cloudformation:props": {
+                        "assumeRolePolicyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "sts:AssumeRole",
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Service": "lambda.amazonaws.com"
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "managedPolicyArns": [
+                          {
+                            "Fn::Join": [
+                              "",
+                              [
+                                "arn:",
+                                {
+                                  "Ref": "AWS::Partition"
+                                },
+                                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                              ]
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.CfnRole",
+                      "version": "1.129.0"
+                    }
+                  },
+                  "DefaultPolicy": {
+                    "id": "DefaultPolicy",
+                    "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaPost/ServiceRole/DefaultPolicy",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaPost/ServiceRole/DefaultPolicy/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                          "aws:cdk:cloudformation:props": {
+                            "policyDocument": {
+                              "Statement": [
+                                {
+                                  "Action": [
+                                    "xray:PutTraceSegments",
+                                    "xray:PutTelemetryRecords"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": "*"
+                                },
+                                {
+                                  "Action": [
+                                    "dynamodb:BatchWriteItem",
+                                    "dynamodb:PutItem",
+                                    "dynamodb:UpdateItem",
+                                    "dynamodb:DeleteItem"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": [
+                                    {
+                                      "Fn::GetAtt": [
+                                        "SamCdkVscodeDebugTable22CBC65F",
+                                        "Arn"
+                                      ]
+                                    },
+                                    {
+                                      "Ref": "AWS::NoValue"
+                                    }
+                                  ]
+                                }
+                              ],
+                              "Version": "2012-10-17"
+                            },
+                            "policyName": "SamCdkVscodeDebugLambdaPostServiceRoleDefaultPolicy70BFE68A",
+                            "roles": [
+                              {
+                                "Ref": "SamCdkVscodeDebugLambdaPostServiceRole78EF027D"
+                              }
+                            ]
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-iam.CfnPolicy",
+                          "version": "1.129.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.Policy",
+                      "version": "1.129.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-iam.Role",
+                  "version": "1.129.0"
+                }
+              },
+              "Code": {
+                "id": "Code",
+                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaPost/Code",
+                "children": {
+                  "Stage": {
+                    "id": "Stage",
+                    "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaPost/Code/Stage",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.AssetStaging",
+                      "version": "1.129.0"
+                    }
+                  },
+                  "AssetBucket": {
+                    "id": "AssetBucket",
+                    "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaPost/Code/AssetBucket",
+                    "children": {
+                      "Notifications": {
+                        "id": "Notifications",
+                        "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaPost/Code/AssetBucket/Notifications",
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/core.Construct",
+                          "version": "1.129.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-s3.BucketBase",
+                      "version": "1.129.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-s3-assets.Asset",
+                  "version": "1.129.0"
+                }
+              },
+              "Resource": {
+                "id": "Resource",
+                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaPost/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
+                  "aws:cdk:cloudformation:props": {
+                    "code": {
+                      "s3Bucket": {
+                        "Ref": "AssetParametersc3aa2f1b357d68f940498df58647d02dcb273c4d63eba6e5cd5eda21945d9a0cS3Bucket9D27180D"
+                      },
+                      "s3Key": {
+                        "Fn::Join": [
+                          "",
+                          [
+                            {
+                              "Fn::Select": [
+                                0,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParametersc3aa2f1b357d68f940498df58647d02dcb273c4d63eba6e5cd5eda21945d9a0cS3VersionKeyAD12CD75"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Fn::Select": [
+                                1,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParametersc3aa2f1b357d68f940498df58647d02dcb273c4d63eba6e5cd5eda21945d9a0cS3VersionKeyAD12CD75"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    },
+                    "role": {
+                      "Fn::GetAtt": [
+                        "SamCdkVscodeDebugLambdaPostServiceRole78EF027D",
+                        "Arn"
+                      ]
+                    },
+                    "environment": {
+                      "variables": {
+                        "TABLE_NAME": {
+                          "Ref": "SamCdkVscodeDebugTable22CBC65F"
+                        }
+                      }
+                    },
+                    "handler": "index.handler",
+                    "layers": [
+                      {
+                        "Ref": "SamCdkVscodeDebugLayer320A8508"
+                      }
+                    ],
+                    "runtime": "nodejs14.x",
+                    "timeout": 30,
+                    "tracingConfig": {
+                      "mode": "Active"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-lambda.CfnFunction",
+                  "version": "1.129.0"
+                }
+              },
+              "LogRetention": {
+                "id": "LogRetention",
+                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaPost/LogRetention",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaPost/LogRetention/Resource",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnResource",
+                      "version": "1.129.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-logs.LogRetention",
+                  "version": "1.129.0"
+                }
+              },
+              "LogGroup": {
+                "id": "LogGroup",
+                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaPost/LogGroup",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Resource",
+                  "version": "1.129.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-lambda.Function",
+              "version": "1.129.0"
+            }
+          },
+          "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a": {
+            "id": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a",
+            "path": "SamCdkVscodeDebugStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a",
+            "children": {
+              "Code": {
+                "id": "Code",
+                "path": "SamCdkVscodeDebugStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Code",
+                "children": {
+                  "Stage": {
+                    "id": "Stage",
+                    "path": "SamCdkVscodeDebugStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Code/Stage",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.AssetStaging",
+                      "version": "1.129.0"
+                    }
+                  },
+                  "AssetBucket": {
+                    "id": "AssetBucket",
+                    "path": "SamCdkVscodeDebugStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Code/AssetBucket",
+                    "children": {
+                      "Notifications": {
+                        "id": "Notifications",
+                        "path": "SamCdkVscodeDebugStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Code/AssetBucket/Notifications",
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/core.Construct",
+                          "version": "1.129.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-s3.BucketBase",
+                      "version": "1.129.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-s3-assets.Asset",
+                  "version": "1.129.0"
+                }
+              },
+              "ServiceRole": {
+                "id": "ServiceRole",
+                "path": "SamCdkVscodeDebugStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "SamCdkVscodeDebugStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                      "aws:cdk:cloudformation:props": {
+                        "assumeRolePolicyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "sts:AssumeRole",
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Service": "lambda.amazonaws.com"
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "managedPolicyArns": [
+                          {
+                            "Fn::Join": [
+                              "",
+                              [
+                                "arn:",
+                                {
+                                  "Ref": "AWS::Partition"
+                                },
+                                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                              ]
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.CfnRole",
+                      "version": "1.129.0"
+                    }
+                  },
+                  "DefaultPolicy": {
+                    "id": "DefaultPolicy",
+                    "path": "SamCdkVscodeDebugStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/DefaultPolicy",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "SamCdkVscodeDebugStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/DefaultPolicy/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                          "aws:cdk:cloudformation:props": {
+                            "policyDocument": {
+                              "Statement": [
+                                {
+                                  "Action": [
+                                    "logs:PutRetentionPolicy",
+                                    "logs:DeleteRetentionPolicy"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": "*"
+                                }
+                              ],
+                              "Version": "2012-10-17"
+                            },
+                            "policyName": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB",
+                            "roles": [
+                              {
+                                "Ref": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB"
+                              }
+                            ]
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-iam.CfnPolicy",
+                          "version": "1.129.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.Policy",
+                      "version": "1.129.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-iam.Role",
+                  "version": "1.129.0"
+                }
+              },
+              "Resource": {
+                "id": "Resource",
+                "path": "SamCdkVscodeDebugStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Resource",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnResource",
+                  "version": "1.129.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Construct",
+              "version": "1.129.0"
+            }
+          },
+          "SamCdkVscodeDebugLambdaGet": {
+            "id": "SamCdkVscodeDebugLambdaGet",
+            "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaGet",
+            "children": {
+              "ServiceRole": {
+                "id": "ServiceRole",
+                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaGet/ServiceRole",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaGet/ServiceRole/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                      "aws:cdk:cloudformation:props": {
+                        "assumeRolePolicyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "sts:AssumeRole",
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Service": "lambda.amazonaws.com"
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "managedPolicyArns": [
+                          {
+                            "Fn::Join": [
+                              "",
+                              [
+                                "arn:",
+                                {
+                                  "Ref": "AWS::Partition"
+                                },
+                                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                              ]
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.CfnRole",
+                      "version": "1.129.0"
+                    }
+                  },
+                  "DefaultPolicy": {
+                    "id": "DefaultPolicy",
+                    "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaGet/ServiceRole/DefaultPolicy",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaGet/ServiceRole/DefaultPolicy/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                          "aws:cdk:cloudformation:props": {
+                            "policyDocument": {
+                              "Statement": [
+                                {
+                                  "Action": [
+                                    "xray:PutTraceSegments",
+                                    "xray:PutTelemetryRecords"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": "*"
+                                },
+                                {
+                                  "Action": [
+                                    "dynamodb:BatchGetItem",
+                                    "dynamodb:GetRecords",
+                                    "dynamodb:GetShardIterator",
+                                    "dynamodb:Query",
+                                    "dynamodb:GetItem",
+                                    "dynamodb:Scan",
+                                    "dynamodb:ConditionCheckItem"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": [
+                                    {
+                                      "Fn::GetAtt": [
+                                        "SamCdkVscodeDebugTable22CBC65F",
+                                        "Arn"
+                                      ]
+                                    },
+                                    {
+                                      "Ref": "AWS::NoValue"
+                                    }
+                                  ]
+                                }
+                              ],
+                              "Version": "2012-10-17"
+                            },
+                            "policyName": "SamCdkVscodeDebugLambdaGetServiceRoleDefaultPolicyB96F083E",
+                            "roles": [
+                              {
+                                "Ref": "SamCdkVscodeDebugLambdaGetServiceRoleD312567F"
+                              }
+                            ]
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-iam.CfnPolicy",
+                          "version": "1.129.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.Policy",
+                      "version": "1.129.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-iam.Role",
+                  "version": "1.129.0"
+                }
+              },
+              "Code": {
+                "id": "Code",
+                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaGet/Code",
+                "children": {
+                  "Stage": {
+                    "id": "Stage",
+                    "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaGet/Code/Stage",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.AssetStaging",
+                      "version": "1.129.0"
+                    }
+                  },
+                  "AssetBucket": {
+                    "id": "AssetBucket",
+                    "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaGet/Code/AssetBucket",
+                    "children": {
+                      "Notifications": {
+                        "id": "Notifications",
+                        "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaGet/Code/AssetBucket/Notifications",
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/core.Construct",
+                          "version": "1.129.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-s3.BucketBase",
+                      "version": "1.129.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-s3-assets.Asset",
+                  "version": "1.129.0"
+                }
+              },
+              "Resource": {
+                "id": "Resource",
+                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaGet/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
+                  "aws:cdk:cloudformation:props": {
+                    "code": {
+                      "s3Bucket": {
+                        "Ref": "AssetParametersc74dfb7958b9b232d6c4163ee15763c719baf35f795e90d0fa068a1e33ee07efS3BucketB4632229"
+                      },
+                      "s3Key": {
+                        "Fn::Join": [
+                          "",
+                          [
+                            {
+                              "Fn::Select": [
+                                0,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParametersc74dfb7958b9b232d6c4163ee15763c719baf35f795e90d0fa068a1e33ee07efS3VersionKeyDF83A2E2"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Fn::Select": [
+                                1,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParametersc74dfb7958b9b232d6c4163ee15763c719baf35f795e90d0fa068a1e33ee07efS3VersionKeyDF83A2E2"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    },
+                    "role": {
+                      "Fn::GetAtt": [
+                        "SamCdkVscodeDebugLambdaGetServiceRoleD312567F",
+                        "Arn"
+                      ]
+                    },
+                    "environment": {
+                      "variables": {
+                        "TABLE_NAME": {
+                          "Ref": "SamCdkVscodeDebugTable22CBC65F"
+                        }
+                      }
+                    },
+                    "handler": "index.handler",
+                    "layers": [
+                      {
+                        "Ref": "SamCdkVscodeDebugLayer320A8508"
+                      }
+                    ],
+                    "runtime": "nodejs14.x",
+                    "timeout": 30,
+                    "tracingConfig": {
+                      "mode": "Active"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-lambda.CfnFunction",
+                  "version": "1.129.0"
+                }
+              },
+              "LogRetention": {
+                "id": "LogRetention",
+                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaGet/LogRetention",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaGet/LogRetention/Resource",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnResource",
+                      "version": "1.129.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-logs.LogRetention",
+                  "version": "1.129.0"
+                }
+              },
+              "LogGroup": {
+                "id": "LogGroup",
+                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugLambdaGet/LogGroup",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Resource",
+                  "version": "1.129.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-lambda.Function",
+              "version": "1.129.0"
+            }
+          },
+          "SamCdkVscodeDebugApiGateway": {
+            "id": "SamCdkVscodeDebugApiGateway",
+            "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::ApiGateway::RestApi",
+                  "aws:cdk:cloudformation:props": {
+                    "name": "crud"
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-apigateway.CfnRestApi",
+                  "version": "1.129.0"
+                }
+              },
+              "CloudWatchRole": {
+                "id": "CloudWatchRole",
+                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/CloudWatchRole",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/CloudWatchRole/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                      "aws:cdk:cloudformation:props": {
+                        "assumeRolePolicyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "sts:AssumeRole",
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Service": "apigateway.amazonaws.com"
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "managedPolicyArns": [
+                          {
+                            "Fn::Join": [
+                              "",
+                              [
+                                "arn:",
+                                {
+                                  "Ref": "AWS::Partition"
+                                },
+                                ":iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs"
+                              ]
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.CfnRole",
+                      "version": "1.129.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-iam.Role",
+                  "version": "1.129.0"
+                }
+              },
+              "Account": {
+                "id": "Account",
+                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Account",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::ApiGateway::Account",
+                  "aws:cdk:cloudformation:props": {
+                    "cloudWatchRoleArn": {
+                      "Fn::GetAtt": [
+                        "SamCdkVscodeDebugApiGatewayCloudWatchRole89D635FF",
+                        "Arn"
+                      ]
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-apigateway.CfnAccount",
+                  "version": "1.129.0"
+                }
+              },
+              "Deployment": {
+                "id": "Deployment",
+                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Deployment",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Deployment/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::ApiGateway::Deployment",
+                      "aws:cdk:cloudformation:props": {
+                        "restApiId": {
+                          "Ref": "SamCdkVscodeDebugApiGatewayF01468B5"
+                        },
+                        "description": "Automatically created by the RestApi construct"
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-apigateway.CfnDeployment",
+                      "version": "1.129.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-apigateway.Deployment",
+                  "version": "1.129.0"
+                }
+              },
+              "DeploymentStage.prod": {
+                "id": "DeploymentStage.prod",
+                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/DeploymentStage.prod",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/DeploymentStage.prod/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::ApiGateway::Stage",
+                      "aws:cdk:cloudformation:props": {
+                        "restApiId": {
+                          "Ref": "SamCdkVscodeDebugApiGatewayF01468B5"
+                        },
+                        "deploymentId": {
+                          "Ref": "SamCdkVscodeDebugApiGatewayDeploymentBC911C9A0be3c1ff7d9100bc884e0bbc4a793dc4"
+                        },
+                        "stageName": "prod"
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-apigateway.CfnStage",
+                      "version": "1.129.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-apigateway.Stage",
+                  "version": "1.129.0"
+                }
+              },
+              "Endpoint": {
+                "id": "Endpoint",
+                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Endpoint",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnOutput",
+                  "version": "1.129.0"
+                }
+              },
+              "Default": {
+                "id": "Default",
+                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Default",
+                "children": {
+                  "api": {
+                    "id": "api",
+                    "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Default/api",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Default/api/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::ApiGateway::Resource",
+                          "aws:cdk:cloudformation:props": {
+                            "parentId": {
+                              "Fn::GetAtt": [
+                                "SamCdkVscodeDebugApiGatewayF01468B5",
+                                "RootResourceId"
+                              ]
+                            },
+                            "pathPart": "api",
+                            "restApiId": {
+                              "Ref": "SamCdkVscodeDebugApiGatewayF01468B5"
+                            }
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-apigateway.CfnResource",
+                          "version": "1.129.0"
+                        }
+                      },
+                      "post": {
+                        "id": "post",
+                        "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Default/api/post",
+                        "children": {
+                          "ApiPermission.SamCdkVscodeDebugStackSamCdkVscodeDebugApiGateway70B38605.POST..api": {
+                            "id": "ApiPermission.SamCdkVscodeDebugStackSamCdkVscodeDebugApiGateway70B38605.POST..api",
+                            "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Default/api/post/ApiPermission.SamCdkVscodeDebugStackSamCdkVscodeDebugApiGateway70B38605.POST..api",
+                            "attributes": {
+                              "aws:cdk:cloudformation:type": "AWS::Lambda::Permission",
+                              "aws:cdk:cloudformation:props": {
+                                "action": "lambda:InvokeFunction",
+                                "functionName": {
+                                  "Fn::GetAtt": [
+                                    "SamCdkVscodeDebugLambdaPost003294BB",
+                                    "Arn"
+                                  ]
+                                },
+                                "principal": "apigateway.amazonaws.com",
+                                "sourceArn": {
+                                  "Fn::Join": [
+                                    "",
+                                    [
+                                      "arn:",
+                                      {
+                                        "Ref": "AWS::Partition"
+                                      },
+                                      ":execute-api:",
+                                      {
+                                        "Ref": "AWS::Region"
+                                      },
+                                      ":",
+                                      {
+                                        "Ref": "AWS::AccountId"
+                                      },
+                                      ":",
+                                      {
+                                        "Ref": "SamCdkVscodeDebugApiGatewayF01468B5"
+                                      },
+                                      "/",
+                                      {
+                                        "Ref": "SamCdkVscodeDebugApiGatewayDeploymentStageprod94FB928B"
+                                      },
+                                      "/POST/api"
+                                    ]
+                                  ]
+                                }
+                              }
+                            },
+                            "constructInfo": {
+                              "fqn": "@aws-cdk/aws-lambda.CfnPermission",
+                              "version": "1.129.0"
+                            }
+                          },
+                          "ApiPermission.Test.SamCdkVscodeDebugStackSamCdkVscodeDebugApiGateway70B38605.POST..api": {
+                            "id": "ApiPermission.Test.SamCdkVscodeDebugStackSamCdkVscodeDebugApiGateway70B38605.POST..api",
+                            "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Default/api/post/ApiPermission.Test.SamCdkVscodeDebugStackSamCdkVscodeDebugApiGateway70B38605.POST..api",
+                            "attributes": {
+                              "aws:cdk:cloudformation:type": "AWS::Lambda::Permission",
+                              "aws:cdk:cloudformation:props": {
+                                "action": "lambda:InvokeFunction",
+                                "functionName": {
+                                  "Fn::GetAtt": [
+                                    "SamCdkVscodeDebugLambdaPost003294BB",
+                                    "Arn"
+                                  ]
+                                },
+                                "principal": "apigateway.amazonaws.com",
+                                "sourceArn": {
+                                  "Fn::Join": [
+                                    "",
+                                    [
+                                      "arn:",
+                                      {
+                                        "Ref": "AWS::Partition"
+                                      },
+                                      ":execute-api:",
+                                      {
+                                        "Ref": "AWS::Region"
+                                      },
+                                      ":",
+                                      {
+                                        "Ref": "AWS::AccountId"
+                                      },
+                                      ":",
+                                      {
+                                        "Ref": "SamCdkVscodeDebugApiGatewayF01468B5"
+                                      },
+                                      "/test-invoke-stage/POST/api"
+                                    ]
+                                  ]
+                                }
+                              }
+                            },
+                            "constructInfo": {
+                              "fqn": "@aws-cdk/aws-lambda.CfnPermission",
+                              "version": "1.129.0"
+                            }
+                          },
+                          "Resource": {
+                            "id": "Resource",
+                            "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Default/api/post/Resource",
+                            "attributes": {
+                              "aws:cdk:cloudformation:type": "AWS::ApiGateway::Method",
+                              "aws:cdk:cloudformation:props": {
+                                "httpMethod": "POST",
+                                "resourceId": {
+                                  "Ref": "SamCdkVscodeDebugApiGatewayapi2391A5E8"
+                                },
+                                "restApiId": {
+                                  "Ref": "SamCdkVscodeDebugApiGatewayF01468B5"
+                                },
+                                "authorizationType": "NONE",
+                                "integration": {
+                                  "type": "AWS_PROXY",
+                                  "uri": {
+                                    "Fn::Join": [
+                                      "",
+                                      [
+                                        "arn:",
+                                        {
+                                          "Ref": "AWS::Partition"
+                                        },
+                                        ":apigateway:",
+                                        {
+                                          "Ref": "AWS::Region"
+                                        },
+                                        ":lambda:path/2015-03-31/functions/",
+                                        {
+                                          "Fn::GetAtt": [
+                                            "SamCdkVscodeDebugLambdaPost003294BB",
+                                            "Arn"
+                                          ]
+                                        },
+                                        "/invocations"
+                                      ]
+                                    ]
+                                  },
+                                  "integrationHttpMethod": "POST"
+                                }
+                              }
+                            },
+                            "constructInfo": {
+                              "fqn": "@aws-cdk/aws-apigateway.CfnMethod",
+                              "version": "1.129.0"
+                            }
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-apigateway.Method",
+                          "version": "1.129.0"
+                        }
+                      },
+                      "{id}": {
+                        "id": "{id}",
+                        "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Default/api/{id}",
+                        "children": {
+                          "Resource": {
+                            "id": "Resource",
+                            "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Default/api/{id}/Resource",
+                            "attributes": {
+                              "aws:cdk:cloudformation:type": "AWS::ApiGateway::Resource",
+                              "aws:cdk:cloudformation:props": {
+                                "parentId": {
+                                  "Ref": "SamCdkVscodeDebugApiGatewayapi2391A5E8"
+                                },
+                                "pathPart": "{id}",
+                                "restApiId": {
+                                  "Ref": "SamCdkVscodeDebugApiGatewayF01468B5"
+                                }
+                              }
+                            },
+                            "constructInfo": {
+                              "fqn": "@aws-cdk/aws-apigateway.CfnResource",
+                              "version": "1.129.0"
+                            }
+                          },
+                          "get": {
+                            "id": "get",
+                            "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Default/api/{id}/get",
+                            "children": {
+                              "ApiPermission.SamCdkVscodeDebugStackSamCdkVscodeDebugApiGateway70B38605.GET..api.{id}": {
+                                "id": "ApiPermission.SamCdkVscodeDebugStackSamCdkVscodeDebugApiGateway70B38605.GET..api.{id}",
+                                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Default/api/{id}/get/ApiPermission.SamCdkVscodeDebugStackSamCdkVscodeDebugApiGateway70B38605.GET..api.{id}",
+                                "attributes": {
+                                  "aws:cdk:cloudformation:type": "AWS::Lambda::Permission",
+                                  "aws:cdk:cloudformation:props": {
+                                    "action": "lambda:InvokeFunction",
+                                    "functionName": {
+                                      "Fn::GetAtt": [
+                                        "SamCdkVscodeDebugLambdaGet69054DC7",
+                                        "Arn"
+                                      ]
+                                    },
+                                    "principal": "apigateway.amazonaws.com",
+                                    "sourceArn": {
+                                      "Fn::Join": [
+                                        "",
+                                        [
+                                          "arn:",
+                                          {
+                                            "Ref": "AWS::Partition"
+                                          },
+                                          ":execute-api:",
+                                          {
+                                            "Ref": "AWS::Region"
+                                          },
+                                          ":",
+                                          {
+                                            "Ref": "AWS::AccountId"
+                                          },
+                                          ":",
+                                          {
+                                            "Ref": "SamCdkVscodeDebugApiGatewayF01468B5"
+                                          },
+                                          "/",
+                                          {
+                                            "Ref": "SamCdkVscodeDebugApiGatewayDeploymentStageprod94FB928B"
+                                          },
+                                          "/GET/api/*"
+                                        ]
+                                      ]
+                                    }
+                                  }
+                                },
+                                "constructInfo": {
+                                  "fqn": "@aws-cdk/aws-lambda.CfnPermission",
+                                  "version": "1.129.0"
+                                }
+                              },
+                              "ApiPermission.Test.SamCdkVscodeDebugStackSamCdkVscodeDebugApiGateway70B38605.GET..api.{id}": {
+                                "id": "ApiPermission.Test.SamCdkVscodeDebugStackSamCdkVscodeDebugApiGateway70B38605.GET..api.{id}",
+                                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Default/api/{id}/get/ApiPermission.Test.SamCdkVscodeDebugStackSamCdkVscodeDebugApiGateway70B38605.GET..api.{id}",
+                                "attributes": {
+                                  "aws:cdk:cloudformation:type": "AWS::Lambda::Permission",
+                                  "aws:cdk:cloudformation:props": {
+                                    "action": "lambda:InvokeFunction",
+                                    "functionName": {
+                                      "Fn::GetAtt": [
+                                        "SamCdkVscodeDebugLambdaGet69054DC7",
+                                        "Arn"
+                                      ]
+                                    },
+                                    "principal": "apigateway.amazonaws.com",
+                                    "sourceArn": {
+                                      "Fn::Join": [
+                                        "",
+                                        [
+                                          "arn:",
+                                          {
+                                            "Ref": "AWS::Partition"
+                                          },
+                                          ":execute-api:",
+                                          {
+                                            "Ref": "AWS::Region"
+                                          },
+                                          ":",
+                                          {
+                                            "Ref": "AWS::AccountId"
+                                          },
+                                          ":",
+                                          {
+                                            "Ref": "SamCdkVscodeDebugApiGatewayF01468B5"
+                                          },
+                                          "/test-invoke-stage/GET/api/*"
+                                        ]
+                                      ]
+                                    }
+                                  }
+                                },
+                                "constructInfo": {
+                                  "fqn": "@aws-cdk/aws-lambda.CfnPermission",
+                                  "version": "1.129.0"
+                                }
+                              },
+                              "Resource": {
+                                "id": "Resource",
+                                "path": "SamCdkVscodeDebugStack/SamCdkVscodeDebugApiGateway/Default/api/{id}/get/Resource",
+                                "attributes": {
+                                  "aws:cdk:cloudformation:type": "AWS::ApiGateway::Method",
+                                  "aws:cdk:cloudformation:props": {
+                                    "httpMethod": "GET",
+                                    "resourceId": {
+                                      "Ref": "SamCdkVscodeDebugApiGatewayapiid8F010994"
+                                    },
+                                    "restApiId": {
+                                      "Ref": "SamCdkVscodeDebugApiGatewayF01468B5"
+                                    },
+                                    "authorizationType": "NONE",
+                                    "integration": {
+                                      "type": "AWS_PROXY",
+                                      "uri": {
+                                        "Fn::Join": [
+                                          "",
+                                          [
+                                            "arn:",
+                                            {
+                                              "Ref": "AWS::Partition"
+                                            },
+                                            ":apigateway:",
+                                            {
+                                              "Ref": "AWS::Region"
+                                            },
+                                            ":lambda:path/2015-03-31/functions/",
+                                            {
+                                              "Fn::GetAtt": [
+                                                "SamCdkVscodeDebugLambdaGet69054DC7",
+                                                "Arn"
+                                              ]
+                                            },
+                                            "/invocations"
+                                          ]
+                                        ]
+                                      },
+                                      "integrationHttpMethod": "POST"
+                                    }
+                                  }
+                                },
+                                "constructInfo": {
+                                  "fqn": "@aws-cdk/aws-apigateway.CfnMethod",
+                                  "version": "1.129.0"
+                                }
+                              }
+                            },
+                            "constructInfo": {
+                              "fqn": "@aws-cdk/aws-apigateway.Method",
+                              "version": "1.129.0"
+                            }
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-apigateway.Resource",
+                          "version": "1.129.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-apigateway.Resource",
+                      "version": "1.129.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-apigateway.ResourceBase",
+                  "version": "1.129.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-apigateway.RestApi",
+              "version": "1.129.0"
+            }
+          },
+          "CDKMetadata": {
+            "id": "CDKMetadata",
+            "path": "SamCdkVscodeDebugStack/CDKMetadata",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "SamCdkVscodeDebugStack/CDKMetadata/Default",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnResource",
+                  "version": "1.129.0"
+                }
+              },
+              "Condition": {
+                "id": "Condition",
+                "path": "SamCdkVscodeDebugStack/CDKMetadata/Condition",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnCondition",
+                  "version": "1.129.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Construct",
+              "version": "1.129.0"
+            }
+          }
+        },
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Stack",
+          "version": "1.129.0"
+        }
+      }
+    },
+    "constructInfo": {
+      "fqn": "@aws-cdk/core.App",
+      "version": "1.129.0"
+    }
+  }
+}
