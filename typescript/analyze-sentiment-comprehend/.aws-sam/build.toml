@@ -13,4 +13,16 @@ functions = ["AnalyzeSentimentComprehendStack/DetectSentiment"]
 "aws:asset:path" = "/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/lambda-fns/comprehend"
 "aws:asset:property" = "Code"
 
+[function_build_definitions.8e8de3e1-acfd-41ed-b3a2-d3fab923a7e3]
+codeuri = "/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/lambda-fns/textract"
+runtime = "python3.8"
+source_md5 = ""
+packagetype = "Zip"
+functions = ["AnalyzeSentimentComprehendStack/Textract"]
+
+[function_build_definitions.8e8de3e1-acfd-41ed-b3a2-d3fab923a7e3.metadata]
+"aws:cdk:path" = "AnalyzeSentimentComprehendStack/Textract/Resource"
+"aws:asset:path" = "/home/marcio/dev/aws-lessons/typescript/analyze-sentiment-comprehend/lambda-fns/textract"
+"aws:asset:property" = "Code"
+
 [layer_build_definitions]

@@ -251,11 +251,302 @@
                   "fqn": "@aws-cdk/core.Construct",
                   "version": "1.128.0"
                 }
+              },
+              "4aea62d820747cc926172adb7c241b98fad041414d4e6f17cb03f55b7480cfd4": {
+                "id": "4aea62d820747cc926172adb7c241b98fad041414d4e6f17cb03f55b7480cfd4",
+                "path": "AnalyzeSentimentComprehendStack/AssetParameters/4aea62d820747cc926172adb7c241b98fad041414d4e6f17cb03f55b7480cfd4",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "AnalyzeSentimentComprehendStack/AssetParameters/4aea62d820747cc926172adb7c241b98fad041414d4e6f17cb03f55b7480cfd4/S3Bucket",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.128.0"
+                    }
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "AnalyzeSentimentComprehendStack/AssetParameters/4aea62d820747cc926172adb7c241b98fad041414d4e6f17cb03f55b7480cfd4/S3VersionKey",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.128.0"
+                    }
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "AnalyzeSentimentComprehendStack/AssetParameters/4aea62d820747cc926172adb7c241b98fad041414d4e6f17cb03f55b7480cfd4/ArtifactHash",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.128.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Construct",
+                  "version": "1.128.0"
+                }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
               "version": "1.128.0"
+            }
+          },
+          "TextractBucket": {
+            "id": "TextractBucket",
+            "path": "AnalyzeSentimentComprehendStack/TextractBucket",
+            "children": {
+              "Notifications": {
+                "id": "Notifications",
+                "path": "AnalyzeSentimentComprehendStack/TextractBucket/Notifications",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Construct",
+                  "version": "1.129.0"
+                }
+              },
+              "Resource": {
+                "id": "Resource",
+                "path": "AnalyzeSentimentComprehendStack/TextractBucket/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                  "aws:cdk:cloudformation:props": {}
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-s3.CfnBucket",
+                  "version": "1.129.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-s3.Bucket",
+              "version": "1.129.0"
+            }
+          },
+          "Textract": {
+            "id": "Textract",
+            "path": "AnalyzeSentimentComprehendStack/Textract",
+            "children": {
+              "ServiceRole": {
+                "id": "ServiceRole",
+                "path": "AnalyzeSentimentComprehendStack/Textract/ServiceRole",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "AnalyzeSentimentComprehendStack/Textract/ServiceRole/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                      "aws:cdk:cloudformation:props": {
+                        "assumeRolePolicyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "sts:AssumeRole",
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Service": "lambda.amazonaws.com"
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "managedPolicyArns": [
+                          {
+                            "Fn::Join": [
+                              "",
+                              [
+                                "arn:",
+                                {
+                                  "Ref": "AWS::Partition"
+                                },
+                                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                              ]
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.CfnRole",
+                      "version": "1.129.0"
+                    }
+                  },
+                  "DefaultPolicy": {
+                    "id": "DefaultPolicy",
+                    "path": "AnalyzeSentimentComprehendStack/Textract/ServiceRole/DefaultPolicy",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "AnalyzeSentimentComprehendStack/Textract/ServiceRole/DefaultPolicy/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                          "aws:cdk:cloudformation:props": {
+                            "policyDocument": {
+                              "Statement": [
+                                {
+                                  "Action": [
+                                    "s3:GetObject*",
+                                    "s3:GetBucket*",
+                                    "s3:List*"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": [
+                                    {
+                                      "Fn::GetAtt": [
+                                        "TextractBucket21EAFF1A",
+                                        "Arn"
+                                      ]
+                                    },
+                                    {
+                                      "Fn::Join": [
+                                        "",
+                                        [
+                                          {
+                                            "Fn::GetAtt": [
+                                              "TextractBucket21EAFF1A",
+                                              "Arn"
+                                            ]
+                                          },
+                                          "/*"
+                                        ]
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "Action": [
+                                    "textract:DetectDocumentText",
+                                    "textract:AnalyzeDocument"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": "*"
+                                }
+                              ],
+                              "Version": "2012-10-17"
+                            },
+                            "policyName": "TextractServiceRoleDefaultPolicyFE6AFAE9",
+                            "roles": [
+                              {
+                                "Ref": "TextractServiceRole4BFE99DB"
+                              }
+                            ]
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-iam.CfnPolicy",
+                          "version": "1.129.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.Policy",
+                      "version": "1.129.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-iam.Role",
+                  "version": "1.129.0"
+                }
+              },
+              "Code": {
+                "id": "Code",
+                "path": "AnalyzeSentimentComprehendStack/Textract/Code",
+                "children": {
+                  "Stage": {
+                    "id": "Stage",
+                    "path": "AnalyzeSentimentComprehendStack/Textract/Code/Stage",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.AssetStaging",
+                      "version": "1.129.0"
+                    }
+                  },
+                  "AssetBucket": {
+                    "id": "AssetBucket",
+                    "path": "AnalyzeSentimentComprehendStack/Textract/Code/AssetBucket",
+                    "children": {
+                      "Notifications": {
+                        "id": "Notifications",
+                        "path": "AnalyzeSentimentComprehendStack/Textract/Code/AssetBucket/Notifications",
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/core.Construct",
+                          "version": "1.129.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-s3.BucketBase",
+                      "version": "1.129.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-s3-assets.Asset",
+                  "version": "1.129.0"
+                }
+              },
+              "Resource": {
+                "id": "Resource",
+                "path": "AnalyzeSentimentComprehendStack/Textract/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
+                  "aws:cdk:cloudformation:props": {
+                    "code": {
+                      "s3Bucket": {
+                        "Ref": "AssetParameters4aea62d820747cc926172adb7c241b98fad041414d4e6f17cb03f55b7480cfd4S3BucketE956CF24"
+                      },
+                      "s3Key": {
+                        "Fn::Join": [
+                          "",
+                          [
+                            {
+                              "Fn::Select": [
+                                0,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParameters4aea62d820747cc926172adb7c241b98fad041414d4e6f17cb03f55b7480cfd4S3VersionKey273A6046"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Fn::Select": [
+                                1,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParameters4aea62d820747cc926172adb7c241b98fad041414d4e6f17cb03f55b7480cfd4S3VersionKey273A6046"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    },
+                    "role": {
+                      "Fn::GetAtt": [
+                        "TextractServiceRole4BFE99DB",
+                        "Arn"
+                      ]
+                    },
+                    "handler": "lambda.handler",
+                    "runtime": "python3.8",
+                    "timeout": 180
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-lambda.CfnFunction",
+                  "version": "1.129.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-lambda.Function",
+              "version": "1.129.0"
             }
           },
           "CDKMetadata": {
