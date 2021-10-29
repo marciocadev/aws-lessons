@@ -1,0 +1,274 @@
+{
+    "Resources": {
+        "XrayLayer26611CFA": {
+            "Type": "AWS::Lambda::LayerVersion",
+            "Properties": {
+                "Content": {
+                    "S3Bucket": {
+                        "Ref": "AssetParametersdb9da1d261aa6d089a1423f6cf382feb771fdfb2fb0f0614b0ad4b8ce2511bedS3BucketF9E7397A"
+                    },
+                    "S3Key": {
+                        "Fn::Join": [
+                            "",
+                            [
+                                {
+                                    "Fn::Select": [
+                                        0,
+                                        {
+                                            "Fn::Split": [
+                                                "||",
+                                                {
+                                                    "Ref": "AssetParametersdb9da1d261aa6d089a1423f6cf382feb771fdfb2fb0f0614b0ad4b8ce2511bedS3VersionKey0FE4BA49"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Fn::Select": [
+                                        1,
+                                        {
+                                            "Fn::Split": [
+                                                "||",
+                                                {
+                                                    "Ref": "AssetParametersdb9da1d261aa6d089a1423f6cf382feb771fdfb2fb0f0614b0ad4b8ce2511bedS3VersionKey0FE4BA49"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        ]
+                    }
+                },
+                "CompatibleRuntimes": [
+                    "nodejs14.x"
+                ],
+                "LayerName": "xrayLayer"
+            },
+            "Metadata": {
+                "aws:cdk:path": "XrayLayerStack/XrayLayer/Resource",
+                "aws:asset:path": "C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\layer",
+                "aws:asset:property": "Content"
+            }
+        },
+        "CDKMetadata": {
+            "Type": "AWS::CDK::Metadata",
+            "Properties": {
+                "Analytics": "v2:deflate64:H4sIAAAAAAAA/02OsQ7CMAxEv4U9dSlICDagKwMqErtJTZWWJpKdgFCUfyeBhenuyac7N9CsdrBc7PElle6nOmrHBPHiUU/qIEI+28HYQbXOiuegvWrv9oyMM3niAh2JC6yp+JzqjTfOJlUq4wPnW48QT/gmvhJLPpXcPycl6wrLlsB3MjMcg57IH1EoJWVdTzBK/Ww2sM3vjmJMxcF6MxN0P/0AOzNOS8sAAAA="
+            },
+            "Metadata": {
+                "aws:cdk:path": "XrayLayerStack/CDKMetadata/Default"
+            },
+            "Condition": "CDKMetadataAvailable"
+        }
+    },
+    "Parameters": {
+        "AssetParametersdb9da1d261aa6d089a1423f6cf382feb771fdfb2fb0f0614b0ad4b8ce2511bedS3BucketF9E7397A": {
+            "Type": "String",
+            "Description": "S3 bucket for asset \"db9da1d261aa6d089a1423f6cf382feb771fdfb2fb0f0614b0ad4b8ce2511bed\""
+        },
+        "AssetParametersdb9da1d261aa6d089a1423f6cf382feb771fdfb2fb0f0614b0ad4b8ce2511bedS3VersionKey0FE4BA49": {
+            "Type": "String",
+            "Description": "S3 key for asset version \"db9da1d261aa6d089a1423f6cf382feb771fdfb2fb0f0614b0ad4b8ce2511bed\""
+        },
+        "AssetParametersdb9da1d261aa6d089a1423f6cf382feb771fdfb2fb0f0614b0ad4b8ce2511bedArtifactHash841B9F82": {
+            "Type": "String",
+            "Description": "Artifact hash for asset \"db9da1d261aa6d089a1423f6cf382feb771fdfb2fb0f0614b0ad4b8ce2511bed\""
+        }
+    },
+    "Conditions": {
+        "CDKMetadataAvailable": {
+            "Fn::Or": [
+                {
+                    "Fn::Or": [
+                        {
+                            "Fn::Equals": [
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "af-south-1"
+                            ]
+                        },
+                        {
+                            "Fn::Equals": [
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "ap-east-1"
+                            ]
+                        },
+                        {
+                            "Fn::Equals": [
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "ap-northeast-1"
+                            ]
+                        },
+                        {
+                            "Fn::Equals": [
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "ap-northeast-2"
+                            ]
+                        },
+                        {
+                            "Fn::Equals": [
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "ap-south-1"
+                            ]
+                        },
+                        {
+                            "Fn::Equals": [
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "ap-southeast-1"
+                            ]
+                        },
+                        {
+                            "Fn::Equals": [
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "ap-southeast-2"
+                            ]
+                        },
+                        {
+                            "Fn::Equals": [
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "ca-central-1"
+                            ]
+                        },
+                        {
+                            "Fn::Equals": [
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "cn-north-1"
+                            ]
+                        },
+                        {
+                            "Fn::Equals": [
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "cn-northwest-1"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Fn::Or": [
+                        {
+                            "Fn::Equals": [
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "eu-central-1"
+                            ]
+                        },
+                        {
+                            "Fn::Equals": [
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "eu-north-1"
+                            ]
+                        },
+                        {
+                            "Fn::Equals": [
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "eu-south-1"
+                            ]
+                        },
+                        {
+                            "Fn::Equals": [
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "eu-west-1"
+                            ]
+                        },
+                        {
+                            "Fn::Equals": [
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "eu-west-2"
+                            ]
+                        },
+                        {
+                            "Fn::Equals": [
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "eu-west-3"
+                            ]
+                        },
+                        {
+                            "Fn::Equals": [
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "me-south-1"
+                            ]
+                        },
+                        {
+                            "Fn::Equals": [
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "sa-east-1"
+                            ]
+                        },
+                        {
+                            "Fn::Equals": [
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "us-east-1"
+                            ]
+                        },
+                        {
+                            "Fn::Equals": [
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "us-east-2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Fn::Or": [
+                        {
+                            "Fn::Equals": [
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "us-west-1"
+                            ]
+                        },
+                        {
+                            "Fn::Equals": [
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "us-west-2"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

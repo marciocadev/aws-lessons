@@ -1,0 +1,228 @@
+{
+    "version": "14.0.0",
+    "artifacts": {
+        "Tree": {
+            "type": "cdk:tree",
+            "properties": {
+                "file": "tree.json"
+            }
+        },
+        "XrayLayerStack": {
+            "type": "aws:cloudformation:stack",
+            "environment": "aws://unknown-account/unknown-region",
+            "properties": {
+                "templateFile": "XrayLayerStack.template.json",
+                "validateOnSynth": false
+            },
+            "metadata": {
+                "/XrayLayerStack": [
+                    {
+                        "type": "aws:cdk:asset",
+                        "data": {
+                            "path": "C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\layer",
+                            "id": "db9da1d261aa6d089a1423f6cf382feb771fdfb2fb0f0614b0ad4b8ce2511bed",
+                            "packaging": "zip",
+                            "sourceHash": "db9da1d261aa6d089a1423f6cf382feb771fdfb2fb0f0614b0ad4b8ce2511bed",
+                            "s3BucketParameter": "AssetParametersdb9da1d261aa6d089a1423f6cf382feb771fdfb2fb0f0614b0ad4b8ce2511bedS3BucketF9E7397A",
+                            "s3KeyParameter": "AssetParametersdb9da1d261aa6d089a1423f6cf382feb771fdfb2fb0f0614b0ad4b8ce2511bedS3VersionKey0FE4BA49",
+                            "artifactHashParameter": "AssetParametersdb9da1d261aa6d089a1423f6cf382feb771fdfb2fb0f0614b0ad4b8ce2511bedArtifactHash841B9F82"
+                        },
+                        "trace": [
+                            "ConstructNode.addMetadata (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:252:92)",
+                            "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:161:23)",
+                            "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+                            "XrayLayerStack.addFileAsset (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+                            "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+                            "new Asset (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+                            "AssetCode.bind (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+                            "new LayerVersion (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\aws-lambda\\lib\\layers.ts:124:29)",
+                            "new XrayLayerStack (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\lib\\xray-layer-stack.ts:8:5)",
+                            "Object.<anonymous> (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\bin\\xray-layer.ts:7:1)",
+                            "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+                            "Module.m._compile (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+                            "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+                            "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+                            "Module.load (node:internal/modules/cjs/loader:981:32)",
+                            "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+                            "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)",
+                            "main (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+                            "Object.<anonymous> (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+                            "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+                            "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+                            "Module.load (node:internal/modules/cjs/loader:981:32)",
+                            "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+                            "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)",
+                            "node:internal/main/run_main_module:17:47"
+                        ]
+                    }
+                ],
+                "/XrayLayerStack/XrayLayer/Resource": [
+                    {
+                        "type": "aws:cdk:logicalId",
+                        "data": "XrayLayer26611CFA",
+                        "trace": [
+                            "new LayerVersion (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\aws-lambda\\lib\\layers.ts:132:39)",
+                            "new XrayLayerStack (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\lib\\xray-layer-stack.ts:8:5)",
+                            "Object.<anonymous> (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\bin\\xray-layer.ts:7:1)",
+                            "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+                            "Module.m._compile (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+                            "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+                            "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+                            "Module.load (node:internal/modules/cjs/loader:981:32)",
+                            "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+                            "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)",
+                            "main (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+                            "Object.<anonymous> (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+                            "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+                            "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+                            "Module.load (node:internal/modules/cjs/loader:981:32)",
+                            "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+                            "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)",
+                            "node:internal/main/run_main_module:17:47"
+                        ]
+                    }
+                ],
+                "/XrayLayerStack/AssetParameters/db9da1d261aa6d089a1423f6cf382feb771fdfb2fb0f0614b0ad4b8ce2511bed/S3Bucket": [
+                    {
+                        "type": "aws:cdk:logicalId",
+                        "data": "AssetParametersdb9da1d261aa6d089a1423f6cf382feb771fdfb2fb0f0614b0ad4b8ce2511bedS3BucketF9E7397A",
+                        "trace": [
+                            "new FileAssetParameters (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:16:32)",
+                            "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:144:16)",
+                            "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+                            "XrayLayerStack.addFileAsset (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+                            "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+                            "new Asset (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+                            "AssetCode.bind (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+                            "new LayerVersion (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\aws-lambda\\lib\\layers.ts:124:29)",
+                            "new XrayLayerStack (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\lib\\xray-layer-stack.ts:8:5)",
+                            "Object.<anonymous> (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\bin\\xray-layer.ts:7:1)",
+                            "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+                            "Module.m._compile (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+                            "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+                            "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+                            "Module.load (node:internal/modules/cjs/loader:981:32)",
+                            "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+                            "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)",
+                            "main (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+                            "Object.<anonymous> (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+                            "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+                            "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+                            "Module.load (node:internal/modules/cjs/loader:981:32)",
+                            "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+                            "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)",
+                            "node:internal/main/run_main_module:17:47"
+                        ]
+                    }
+                ],
+                "/XrayLayerStack/AssetParameters/db9da1d261aa6d089a1423f6cf382feb771fdfb2fb0f0614b0ad4b8ce2511bed/S3VersionKey": [
+                    {
+                        "type": "aws:cdk:logicalId",
+                        "data": "AssetParametersdb9da1d261aa6d089a1423f6cf382feb771fdfb2fb0f0614b0ad4b8ce2511bedS3VersionKey0FE4BA49",
+                        "trace": [
+                            "new FileAssetParameters (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:21:31)",
+                            "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:144:16)",
+                            "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+                            "XrayLayerStack.addFileAsset (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+                            "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+                            "new Asset (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+                            "AssetCode.bind (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+                            "new LayerVersion (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\aws-lambda\\lib\\layers.ts:124:29)",
+                            "new XrayLayerStack (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\lib\\xray-layer-stack.ts:8:5)",
+                            "Object.<anonymous> (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\bin\\xray-layer.ts:7:1)",
+                            "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+                            "Module.m._compile (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+                            "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+                            "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+                            "Module.load (node:internal/modules/cjs/loader:981:32)",
+                            "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+                            "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)",
+                            "main (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+                            "Object.<anonymous> (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+                            "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+                            "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+                            "Module.load (node:internal/modules/cjs/loader:981:32)",
+                            "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+                            "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)",
+                            "node:internal/main/run_main_module:17:47"
+                        ]
+                    }
+                ],
+                "/XrayLayerStack/AssetParameters/db9da1d261aa6d089a1423f6cf382feb771fdfb2fb0f0614b0ad4b8ce2511bed/ArtifactHash": [
+                    {
+                        "type": "aws:cdk:logicalId",
+                        "data": "AssetParametersdb9da1d261aa6d089a1423f6cf382feb771fdfb2fb0f0614b0ad4b8ce2511bedArtifactHash841B9F82",
+                        "trace": [
+                            "new FileAssetParameters (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:26:34)",
+                            "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:144:16)",
+                            "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+                            "XrayLayerStack.addFileAsset (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+                            "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+                            "new Asset (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+                            "AssetCode.bind (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+                            "new LayerVersion (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\aws-lambda\\lib\\layers.ts:124:29)",
+                            "new XrayLayerStack (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\lib\\xray-layer-stack.ts:8:5)",
+                            "Object.<anonymous> (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\bin\\xray-layer.ts:7:1)",
+                            "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+                            "Module.m._compile (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+                            "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+                            "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+                            "Module.load (node:internal/modules/cjs/loader:981:32)",
+                            "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+                            "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)",
+                            "main (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+                            "Object.<anonymous> (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+                            "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+                            "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+                            "Module.load (node:internal/modules/cjs/loader:981:32)",
+                            "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+                            "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)",
+                            "node:internal/main/run_main_module:17:47"
+                        ]
+                    }
+                ],
+                "/XrayLayerStack/CDKMetadata/Default": [
+                    {
+                        "type": "aws:cdk:logicalId",
+                        "data": "CDKMetadata",
+                        "trace": [
+                            "new MetadataResource (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:22:24)",
+                            "C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5",
+                            "visit (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+                            "visit (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+                            "injectMetadataResources (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+                            "Object.synthesize (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+                            "App.synth (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+                            "process.<anonymous> (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+                            "Object.onceWrapper (node:events:514:26)",
+                            "process.emit (node:events:394:28)",
+                            "process.emit (node:domain:475:12)",
+                            "process.emit (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\source-map-support\\source-map-support.js:516:21)"
+                        ]
+                    }
+                ],
+                "/XrayLayerStack/CDKMetadata/Condition": [
+                    {
+                        "type": "aws:cdk:logicalId",
+                        "data": "CDKMetadataAvailable",
+                        "trace": [
+                            "new MetadataResource (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:31:27)",
+                            "C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5",
+                            "visit (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+                            "visit (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+                            "injectMetadataResources (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+                            "Object.synthesize (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+                            "App.synth (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+                            "process.<anonymous> (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+                            "Object.onceWrapper (node:events:514:26)",
+                            "process.emit (node:events:394:28)",
+                            "process.emit (node:domain:475:12)",
+                            "process.emit (C:\\Dev\\marcio\\aws-lessons\\typescript\\xray-layer\\node_modules\\source-map-support\\source-map-support.js:516:21)"
+                        ]
+                    }
+                ]
+            },
+            "displayName": "XrayLayerStack"
+        }
+    }
+}
